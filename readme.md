@@ -1,3 +1,3 @@
-En este proyecto vamos a copiar la pagina web de www.nintendo.es 
+En este proyecto vamos a copiar la pagina web de www.nintendo.com/us/
 
-A la espera de asignar las tareas de cada uno.
+Para ver las tareas asignadas y las actualizaciones sobre el proyecto -> https://trello.com/b/TljUTEhs/
