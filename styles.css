@@ -1,0 +1,65 @@
+:root{
+    font-family: sans-serif;
+}
+
+.navbar-header-top{
+    display: flex;
+    justify-content: space-between;
+    max-height: 52px;
+    overflow: hidden;
+}
+
+.navbar-first-group-hr{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-first-group-nohr{
+    display: flex;
+}
+
+.navbar-logo-nintendo{
+    height: 52px;
+    width: 105;
+}
+
+.navbar-search-button{
+    background-color: transparent;
+    border: none;
+}
+
+#navbar-search-icon{
+color: black;
+}
+
+#navbar-search-icon:hover{
+    color: red;
+}
+
+.navbar-search-bar{
+    border: none;
+}
+
+.navbar-search-bar:hover{
+    color: red;
+}
+
+.navbar-dropdown-categories{
+    border: none;
+}
+
+.navbar-hr{
+    color: black;
+    width: 300px;
+}
+
+.navbar-right-links{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.navbar-right-links a{
+    color: darkslategray;
+    text-decoration: none;
+}
