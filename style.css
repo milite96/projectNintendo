@@ -218,3 +218,20 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.nintendo-banner {
+    background-color: rgb(230, 0, 18);
+    padding: 2.25rem 1rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nintendo-banner-logo {
+    width: 195px;
+    height: 50px;
+    align-items: start;
+}
+.social-logos {
+    display: flex;
+}
