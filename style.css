@@ -1,14 +1,18 @@
+@import url("https://fonts.cdnfonts.com/css/museo-sans-rounded");
+
 body {
   margin: 0;
 }
 
 header {
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-weight: 600;
 }
 
-header button:hover{
-  color:red;
+header button:hover,
+select:hover,
+a:hover {
+  color: red;
   cursor: pointer;
 }
 
@@ -18,15 +22,13 @@ header button:hover{
   max-height: 52px;
   overflow: hidden;
   align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 
-.navbar-first-group-hr {
+.navbar-first-group {
   display: flex;
-  flex-direction: column;
-}
-
-.navbar-first-group-nohr {
-  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar-icon {
@@ -43,13 +45,26 @@ header button:hover{
   width: 80px;
 }
 
+.lower-bar {
+  display: flex;
+  border-bottom: 1px solid #484848;
+  margin: 0;
+  align-items: center;
+  padding: 7px;
+  width: 450px;
+}
+.lower-bar:hover {
+  border-bottom: 1px solid red;
+}
+
 .navbar-search-button {
   background-color: transparent;
   border: none;
 }
 
 #navbar-search-icon {
-  color: black;
+  color: #484848;
+  font-size: large;
 }
 
 #navbar-search-icon:hover {
@@ -60,20 +75,16 @@ header button:hover{
   border: none;
 }
 
-.navbar-search-bar:hover {
-  color: red;
-}
-
 .navbar-dropdown-categories {
   border: none;
+  font-weight: 600;
+  margin-left: 130px;
 }
-.navbar-dropdown-categories option{
-  color: darkslategray;
-}
-
-.navbar-hr {
-  color: black;
-  width: 300px;
+.navbar-dropdown-categories option {
+  color: #484848;
+  font-weight: bold;
+  background-color: rgb(243, 236, 236);
+  border: none;
 }
 
 .navbar-right-links {
@@ -83,8 +94,19 @@ header button:hover{
 }
 
 .navbar-right-links a {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
   color: darkslategray;
   text-decoration: none;
+}
+
+.navbar-right-links a:hover {
+  color: red;
+}
+
+.navbar-right-links a i {
+  font-size: 18px;
 }
 
 .navbar-header-bottom {
@@ -96,17 +118,29 @@ header button:hover{
 }
 
 .navbar-header-bottom button {
+  color: #484848;
   border: none;
   background-color: transparent;
+  display: flex;
+  gap: 5px;
 }
 
 .navbar-header-bottom select {
+  font-family: "Museo Sans Rounded", sans-serif;
   border: none;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .navbar-header-bottom a {
   text-decoration: none;
-  color: darkslategray;
+  color: #484848;
+  display: flex;
+  gap: 5px;
+  font-size: small;
+}
+.navbar-header-bottom button i {
+  font-size: 18px;
 }
 
 #slider {

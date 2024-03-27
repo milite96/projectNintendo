@@ -27,8 +27,7 @@
     <nav>
       <header>
         <div class="navbar-header-top">
-          <div class="navbar-first-group-hr">
-            <div class="navbar-first-group-nohr">
+            <div class="navbar-first-group">
               <span class="navbar-icon">
                 <img
                   src="assets/nintendo.png"
@@ -36,34 +35,34 @@
                   class="navbar-logo-nintendo"
                 />
               </span>
-              <button class="navbar-search-button">
+              <div class="lower-bar">
                 <i
-                  class="fa-solid fa-magnifying-glass"
-                  id="navbar-search-icon"
-                ></i>
-                <input
-                  type="search"
-                  name="search-bar"
-                  class="navbar-search-bar"
-                  id="navbar-search-bar"
-                  placeholder="Search"
-                />
-              </button>
-              <select
-                name="allcategories"
-                id="navbar-dropdown-categories"
-                class="navbar-dropdown-categories"
-              >
-                <option><a href="#">All categories</a></option>
-                <option><a href="#">Games</a></option>
-                <option><a href="#">Hardware</a></option>
-                <option><a href="#">Merchandise</a></option>
-                <option><a href="#">News & Events</a></option>
-                <option><a href="#">Support</a></option>
-              </select>
+                    class="fa-solid fa-magnifying-glass"
+                    id="navbar-search-icon"
+                  ></i>
+                <button class="navbar-search-button">
+                  <input
+                    type="search"
+                    name="search-bar"
+                    class="navbar-search-bar"
+                    id="navbar-search-bar"
+                    placeholder="Search"
+                  />
+                </button>
+                <select
+                  name="allcategories"
+                  id="navbar-dropdown-categories"
+                  class="navbar-dropdown-categories"
+                >
+                  <option><a href="#">All categories</a></option>
+                  <option><a href="#">Games</a></option>
+                  <option><a href="#">Hardware</a></option>
+                  <option><a href="#">Merchandise</a></option>
+                  <option><a href="#">News & Events</a></option>
+                  <option><a href="#">Support</a></option>
+                </select>
+              </div>
             </div>
-            <!-- <hr class="navbar-hr" /> -->
-          </div>
           <div class="navbar-right-links">
             <a href="#" class="navbar-link-support">
               <i class="fa-solid fa-message"></i>Support</a
@@ -198,7 +197,7 @@
             </select>
           </button>
 
-          <a href="#"> <i class="fa-solid fa-message"></i>News & Events</a>
+          <a href="#" id="news-events"> <i class="fa-solid fa-message"></i>News & Events</a>
           <button class="navbar-playnint-buttons">
             <i class="fa-solid fa-star"></i>
             <select name="play-nintendo" id="navbar-playnint-buttons">
