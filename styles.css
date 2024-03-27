@@ -7,6 +7,7 @@
     justify-content: space-between;
     max-height: 52px;
     overflow: hidden;
+    align-items: center;
 }
 
 .navbar-first-group-hr{
@@ -62,4 +63,26 @@ color: black;
 .navbar-right-links a{
     color: darkslategray;
     text-decoration: none;
+}
+
+.navbar-header-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 42px;
+    align-items: center;
+}
+
+.navbar-header-bottom button{
+    border: none;
+    background-color: transparent
+}
+
+.navbar-header-bottom select{
+    border: none;
+}
+
+.navbar-header-bottom a{
+    text-decoration: none;
+    color: darkslategray;
 }
