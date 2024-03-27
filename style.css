@@ -1,4 +1,4 @@
-.card {
+.card-card {
     width: 232px;
     height: 295px;
     border: 1px solid grey;
@@ -8,33 +8,33 @@
     font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.image-container{
+.card-image-container{
     width:232px;
     height: 130px;
 }
 
-.image-container img{
+.card-image-container img{
     width: 100%;
     height: 100%;
 }
 
-.content-1{
+.card-content-1{
     display: flex;
     height:149px; 
     padding-top: 16px;
 }
-.content-2{
+.card-content-2{
     padding:0px 16px;
 }
 
-.h3-container {
+.card-h3-container {
     display:flex;
     width: 100%;
     height: 64px;
     margin-bottom: 16px;
 }
 
-.h3-container h3{
+.card-h3-container h3{
     margin: 0;
     padding: 0;
     height: 45px;  /* se le da la altura que tiene en la web de nintendo */
@@ -43,6 +43,6 @@
     
 }
 
-.tag{
+.card-tag{
     font-size: 0.75rem;
 }
