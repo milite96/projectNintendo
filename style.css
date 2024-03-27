@@ -1,8 +1,7 @@
-.featured{
-    height: 397px;
-    width: 100%;
+.featured {
+  height: 397px;
+  width: 100%;
 }
-
 
 .card-card {
   width: 260px;
@@ -49,14 +48,12 @@
   /* letter-spacing: 0px; */
 }
 
-
-
 .card-tag {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.75rem;
-  width: 65px;
+  width: 66px;
   height: 19px;
   padding: 0px 8px;
   background-color: #4b5cce;
@@ -64,38 +61,36 @@
   color: white;
 }
 
-.card-spacing{
-    display: flex;
-    width: 8px;
-    height: 8px; 
+.card-spacing {
+  display: flex;
+  width: 8px;
+  height: 8px;
 }
 
-.card-footer-grid-container{
-    display: grid;
-    width: 228px;
-    height: 24px;
-    margin-bottom: 16px;
+.card-footer-grid-container {
+  display: grid;
+  width: 228px;
+  height: 24px;
+  margin-bottom: 16px;
 }
 
-.card-footer-flex-container{
-    display: flex;
-    align-items: center;
-    width: 188px;
-    height: 24px;
+.card-footer-flex-container {
+  display: flex;
+  align-items: center;
+  width: 188px;
+  height: 24px;
 }
 
-.card-red-stick{
-    display: flex;
-    width: 2px;
-    height: 16px;
-    background-color: #e60012;
-    margin-right: 6px;
-
+.card-red-stick {
+  display: flex;
+  width: 2px;
+  height: 16px;
+  background-color: #e60012;
+  margin-right: 6px;
 }
 
-.card-console{
-    display: flex;
-    font-weight: 100;
-    font-size: 0.875rem;
+.card-console {
+  display: flex;
+  font-weight: 100;
+  font-size: 0.875rem;
 }
-
