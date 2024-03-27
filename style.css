@@ -211,3 +211,10 @@ header {
   font-weight: 100;
   font-size: 0.875rem;
 }
+
+.mario{
+    background-image: url(https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/mario-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
