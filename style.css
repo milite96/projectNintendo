@@ -1,3 +1,123 @@
+<<<<<<< HEAD
+=======
+body {
+  margin: 0;
+}
+
+header {
+  font-family: sans-serif;
+}
+
+.navbar-header-top {
+  display: flex;
+  justify-content: space-between;
+  max-height: 52px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.navbar-first-group-hr {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-first-group-nohr {
+  display: flex;
+}
+
+.navbar-logo-nintendo {
+  height: 52px;
+  width: 105;
+}
+
+.navbar-search-button {
+  background-color: transparent;
+  border: none;
+}
+
+#navbar-search-icon {
+  color: black;
+}
+
+#navbar-search-icon:hover {
+  color: red;
+}
+
+.navbar-search-bar {
+  border: none;
+}
+
+.navbar-search-bar:hover {
+  color: red;
+}
+
+.navbar-dropdown-categories {
+  border: none;
+}
+
+.navbar-hr {
+  color: black;
+  width: 300px;
+}
+
+.navbar-right-links {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.navbar-right-links a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+.navbar-header-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 42px;
+  align-items: center;
+}
+
+.navbar-header-bottom button {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-header-bottom select {
+  border: none;
+}
+
+.navbar-header-bottom a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+#slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#banner-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#banner-footer > button {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#banner-footer > button > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+}
+
+>>>>>>> development
 .featured {
   height: 397px;
   width: 100%;
@@ -94,3 +214,30 @@
   font-weight: 100;
   font-size: 0.875rem;
 }
+<<<<<<< HEAD
+=======
+
+.mario{
+    background-image: url(https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/mario-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nintendo-banner {
+    background-color: rgb(230, 0, 18);
+    padding: 2.25rem 1rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nintendo-banner-logo {
+    width: 195px;
+    height: 50px;
+    align-items: start;
+}
+.social-logos {
+    display: flex;
+}
+>>>>>>> development

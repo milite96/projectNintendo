@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5ee89813d7.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="icon"
       type="image/png"
@@ -19,13 +24,258 @@
     <title>Nintendo Official Site: Consoles, Games, News, and More</title>
   </head>
   <body>
+    <nav>
+      <header>
+        <div class="navbar-header-top">
+          <div class="navbar-first-group-hr">
+            <div class="navbar-first-group-nohr">
+              <img
+                src="assets/nintendo.png"
+                alt="logo de nintendo"
+                class="navbar-logo-nintendo"
+              />
+              <button class="navbar-search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  id="navbar-search-icon"
+                ></i>
+                <input
+                  type="search"
+                  name="search-bar"
+                  class="navbar-search-bar"
+                  id="navbar-search-bar"
+                  placeholder="Search"
+                />
+              </button>
+              <select
+                name="allcategories"
+                id="navbar-dropdown-categories"
+                class="navbar-dropdown-categories"
+              >
+                <option><a href="#">All categories</a></option>
+                <option><a href="#">Games</a></option>
+                <option><a href="#">Hardware</a></option>
+                <option><a href="#">Merchandise</a></option>
+                <option><a href="#">News & Events</a></option>
+                <option><a href="#">Support</a></option>
+              </select>
+            </div>
+            <hr class="navbar-hr" />
+          </div>
+          <div class="navbar-right-links">
+            <a href="#" class="navbar-link-support">
+              <i class="fa-solid fa-message"></i>Support</a
+            >
+            <a href="#" class="navbar-link-wishlist">
+              <i class="fa-solid fa-heart"></i>Wish List</a
+            >
+            <a href="#" class="navbar-link-cart">
+              <i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+            <a href="#" class="navbar-link-login">
+              <i class="fa-solid fa-user"></i>Log in / Sign up</a
+            >
+            <a href="#" class="navbar-link-regionselect">
+              <i class="fa-solid fa-flag"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="navbar-header-bottom">
+          <button class="navbar-mynintendo-store-button">
+            <i class="fa-brands fa-square-threads"></i
+            ><select name="navbar-mynintendo-store" id="navbar-nintendo-store">
+              <option value="none" selected disabled hidden>
+                My Nintendo Store
+              </option>
+              <!-- button? -->
+              <ul class="navbar-mynintendo-games">
+                <option>
+                  <li><a href="#">Games</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Nintendo Switch games</a></li>
+                </option>
+                <option>
+                  <li><a href="#">New releases</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Sales & Deals</a></li>
+                </option>
+              </ul>
+              <ul class="navbar-mynintendo-hardware">
+                <option>
+                  <li><a href="#">Hardware</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Nintendo Switch systems</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Joy-Con & controllers</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Cases & more</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Replacement parts</a></li>
+                </option>
+              </ul>
+              <ul class="navbar-mynintendo-merchandise">
+                <option>
+                  <li><a href="#">Merchandise</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Apparel & accesories</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Home & office</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Plush</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Toys</a></li>
+                </option>
+              </ul>
+              <ul class="navbar-mynintendo-store-exclusives">
+                <option>
+                  <li><a href="#">Store exclusives</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Exclusive products</a></li>
+                </option>
+                <option>
+                  <li><a href="#">My Nintendo rewards</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Nintendo Switch Online offers</a></li>
+                </option>
+              </ul>
+              <ul class="navbar-mynintendo-characters">
+                <option>
+                  <li><a href="#">Characters</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Pimkin</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Splatoon</a></li>
+                </option>
+                <option>
+                  <li><a href="#">Super Mario</a></li>
+                </option>
+                <option>
+                  <li><a href="#">The Legend of Zelda</a></li>
+                </option>
+              </ul>
+              <option><a href="#">Sales & Deals</a></option>
+              <option><a href="#">Shop all</a></option>
+            </select>
+          </button>
+          <button class="navbar-games-buttons">
+            <i class="fa-solid fa-gamepad"></i
+            ><select name="games" id="navbar-games-buttons">
+              <option value="none" selected disabled hidden>Games</option>
+              <option><a href="#">Nintendo Switch Games</a></option>
+              <option><a href="#">New Releases</a></option>
+              <option><a href="#">Coming Soon</a></option>
+              <option><a href="#">Shop games</a></option>
+            </select>
+          </button>
+          <button class="navbar-ns-buttons">
+            <i class="fa-solid fa-pause"></i>
+            <select name="nintendo-switch" id="navbar-ns-buttons">
+              <option value="none" selected disabled hidden>
+                Nintendo Switch
+              </option>
+              <option><a href="#">Nintendo Switch lineup</a></option>
+              <option><a href="#">Compare systems</a></option>
+              <option><a href="#">Online service</a></option>
+              <option><a href="#">Accessories</a></option>
+              <option><a href="#">Shop systems</a></option>
+            </select>
+          </button>
+
+          <a href="#"> <i class="fa-solid fa-message"></i>News & Events</a>
+          <button class="navbar-playnint-buttons">
+            <i class="fa-solid fa-star"></i>
+            <select name="play-nintendo" id="navbar-playnint-buttons">
+              <option value="none" selected disabled hidden>
+                Play Nintendo
+              </option>
+              <option><a href="#">For kids</a></option>
+              <option><a href="#">For parents</a></option>
+            </select>
+          </button>
+        </div>
+      </header>
+    </nav>
+
+    <div class="banner">
+      <div id="slider">
+        <div class="first-banner">
+          <img src="assets/images/main-asset.avif" alt="First Peach Banner" />
+          <div class="first-banner-footer">
+            <p>
+              Download the free demo and step into the spotlight with Princess
+              Peach
+            </p>
+            <img src="assets/images/esrb10.svg" alt="ESRB +10" />
+          </div>
+        </div>
+        <div class="second-banner">
+          <img
+            src="assets/images/CS-Peach-Collection-Desktop-main-asset.avif"
+            alt="Peach Collection Desktop"
+          />
+          <div class="second-banner-footer">
+            <p>Browse the Peach™ Collection in the My Nintendo Store</p>
+          </div>
+        </div>
+        <div class="third-banner">
+          <img
+            src="assets/images/CS-Leading-Ladies-Desktop-main-asset.avif"
+            alt="Powerful Women Characters"
+          />
+          <div class="third-banner-footer">
+            <p>Take control and play as powerful women characters</p>
+            <img src="assets/images/esrb-e_t.png" alt="ESRB E-T" />
+          </div>
+        </div>
+      </div>
+
+      <div id="banner-footer">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Princess%20Peach%20Showtime%20-%20Animated/peach-thumbnail-blue"
+            alt=""
+          />
+        </button>
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Peach%20Collection/96x96-CS-Thumb-Peach-Collection"
+            alt=""
+          />
+        </button>
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Leading%20Ladies/96x96-CS-Thumb-Leading-Ladies"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
 
     <section class="featured">
-       <h1>Featured</h1> <!--tenemos que seguir por aqui -->
+      <h1>Featured</h1>
+      <!--tenemos que seguir por aqui -->
       <div class="card-featured">
         <div class="card-card">
           <div class="card-image-container">
-            <img src="assets/featured/Mission-rewards.avif" alt="This is a random image" />
+            <img
+              src="assets/featured/Mission-rewards.avif"
+              alt="This is a random image"
+            />
           </div>
           <div class="card-content-1">
             <div class="card-content-2">
@@ -49,5 +299,256 @@
     </section>
     <hr />
 
+    <section class="News-margin">
+      <div class="News-container">
+        <div class="News-content">
+          <h2>News</h2>
+          <div class="News-cards">
+            <div class="first-card-container">
+              <div class="first-card-img">
+                <img
+                  src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_0.75/c_scale,w_600/ncom/en_US/articles/2024/icon-elements-inspired-by-the-princess-peach-showtime-game-are-here-for-a-limited-time/LHA-1402-Missions_Rewards-Icons-PPS-Social-EN_v01"
+                />
+              </div>
+              <div class="first-card-text">
+                <div class="first-card-date">
+                  <p>03/21/24</p>
+                </div>
+                <div class="first-card-text1">
+                  <h3>
+                    <a href=""
+                      >Icon elements inspired by the Princess Peach: Showtime!
+                      game are here for a limited time!</a
+                    >
+                  </h3>
+                </div>
+                <div class="first-card-text2">
+                  <p>
+                    Time to refresh your user icon? Redeem your My Nintendo™
+                    Platinum Points* for exclusive rewards, including icon
+                    elements you can use to create a new look for your user
+                    icon! Icon elements featuring the Princess Peach™: Showtime!
+                    game are available a…
+                  </p>
+                </div>
+                <div class="first-card-text3">
+                  <span>Read more</span>
+                </div>
+              </div>
+            </div>
+            <div class="second-card-container">
+              <div class="second-card-img">
+                <img
+                  src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_0.75/c_scale,w_400/ncom/en_US/articles/2024/explore-classic-game-collections-revitalized-for-nintendo-switch/2250x1266_Switch_news_Remakes_b_EN"
+                />
+              </div>
+              <div class="second-card-text">
+                <div class="second-card-date">
+                  <p>03/20/24</p>
+                </div>
+                <div class="second-card-text1">
+                  <h3>
+                    <a href=""
+                      >Explore classic game collections revitalized for Nintendo
+                      Switch</a
+                    >
+                  </h3>
+                </div>
+                <div class="second-card-text2">
+                  <p>
+                    There’s a lot of reasons someone may not have been able to
+                    play a popular classic game when it first came out. Luckily,
+                    several of these game series
+                  </p>
+                </div>
+                <div class="second-card-text3">
+                  <span>Read more</span>
+                </div>
+              </div>
+            </div>
+            <div class="third-card-container">
+              <div class="third-card-img">
+                <img
+                  src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_0.75/c_scale,w_300/ncom/software/switch/70010000069925/b77a4d7290011650192b4336b7d2cc5bbfbd1c9222dc9f155c444b630affd2a2"
+                />
+              </div>
+              <div class="third-card-text">
+                <div class="third-card-date">
+                  <p>03/19/24</p>
+                </div>
+                <div class="third-card-text1">
+                  <h3>
+                    <a href=""
+                      >Set out on the road to baseball greatness with MLB The
+                      Show 24!</a
+                    >
+                  </h3>
+                </div>
+                <div class="third-card-text2">
+                  <span>Read more</span>
+                </div>
+              </div>
+            </div>
+            <div class="fourth-card-container">
+              <div class="fourth-card-img">
+                <img
+                  src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_0.75/c_scale,w_300/ncom/en_US/articles/2024/a-new-splatfest-well-thats-music-to-our-ears/1920x1080_Ncom_SP3March_EN"
+                />
+              </div>
+              <div class="fourth-card-text">
+                <div class="fourth-card-date">
+                  <p>03/15/24</p>
+                </div>
+                <div class="fourth-card-text1">
+                  <h3>
+                    <a href=""
+                      >A new Splatfest? Well, that´s music to our ears!</a
+                    >
+                  </h3>
+                </div>
+                <div class="fourth-card-text2">
+                  <span>Read more</span>
+                </div>
+              </div>
+            </div>
+            <div class="fifth-card-container">
+              <div class="fifth-card-img">
+                <img
+                  src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_0.75/c_scale,w_300/ncom/en_US/articles/2024/fight-in-iconic-battles-from-across-the-star-wars-galaxy/1920x1080_Ncom_SWBFC"
+                />
+              </div>
+              <div class="fifth-card-text">
+                <div class="fifth-card-date">
+                  <p>03/14/24</p>
+                </div>
+                <div class="fifth-card-text1">
+                  <h3>
+                    <a href=""
+                      >Fight in iconic battles from across the START WARS
+                      galaxy!</a
+                    >
+                  </h3>
+                </div>
+                <div class="fifth-card-text2">
+                  <span>Read more</span>
+                </div>
+              </div>
+            </div>
+            <div class="six-card-container">
+              <div class="six-card-img">
+                <img
+                  src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_0.75/c_scale,w_300/ncom/en_US/articles/2024/have-questions-about-the-game-we-have-answers/2250x1266_Ncom_GTK_PPS_EN"
+                />
+              </div>
+              <div class="six-card-text">
+                <div class="six-card-date">
+                  <p>03/13/24</p>
+                </div>
+                <div class="six-card-text1">
+                  <h3>
+                    <a href=""
+                      >Have questions about the game? We have answers!</a
+                    >
+                  </h3>
+                </div>
+                <div class="six-card-text2">
+                  <span>Read more</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="">
+            <svg></svg>
+            <span>See all news articles</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="characters">
+      <div class="mario">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/Character%20Portals/1600x1600_NCOM_Home_Characters_Mario"
+            alt=""
+          />
+        </button>
+        <p>Super Mario™</p>
+      </div>
+      <div class="zelda">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/Character%20Portals/The%20Legend%20of%20Zelda/1600x1600_character"
+            alt=""
+          />
+        </button>
+        <p>The Legend of Zelda™</p>
+      </div>
+      <div class="splatoon">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/Character%20Portals/Ncom_CharacterRail_1600x1600_Splatoon_character_v2"
+            alt=""
+          />
+        </button>
+        <p>Splatoon™</p>
+      </div>
+      <div class="kirby">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/Character%20Portals/1600x1600_NCOM_Home_Characters_Kirby"
+            alt=""
+          />
+        </button>
+        <p>Kirby™</p>
+      </div>
+      <div class="pikmin">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Character-Pikmin_v02"
+            alt=""
+          />
+        </button>
+        <p>Pikmin™</p>
+      </div>
+      <div class="animal">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Character-AnimalCrossing_v01"
+            alt=""
+          />
+        </button>
+        <p>Animal Crossing™</p>
+      </div>
+      <div class="metroid">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Character-Metroid_v01"
+            alt=""
+          />
+        </button>
+        <p>Metroid™</p>
+      </div>
+      <div class="pokémon">
+        <button type="button">
+          <img
+            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Character-Pokemon_v01"
+            alt=""
+          />
+        </button>
+        <p>Pokémon™</p>
+      </div>
+    </section>
+
+    <div class="nintendo-banner">
+      <img src="Nintendo.png" class="nintendo-banner-logo" />
+      <div class="social-logos">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <footer>
+      <div class="linkbar"></div>
+    </footer>
+    <div class="bottom-info"></div>
   </body>
 </html>
