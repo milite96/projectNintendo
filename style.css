@@ -2,9 +2,10 @@
     background-color: rgb(230, 0, 18);
     padding: 2.25rem 1rem;
     color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    place-items: center end;
+   
+    
 }
 .nintendo-baner-logo {
     width: 195px;
@@ -12,5 +13,6 @@
     align-items: start;
 }
 .social-logos {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto repeat(4,1fr);
 }
