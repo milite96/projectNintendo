@@ -326,7 +326,40 @@ a:hover {
   font-size: 0.875rem;
 }
 
+.News-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.first-card-container {
+  width: 550px;
+  height: 550px;
+}
+
+.second-card-container {
+  width: 550px;
+  height: 550px;
+}
+
+.third-card-container {
+  width: 262px;
+  height: 321px;
+}
+
+.fourth-card-container {
+  width: 262px;
+  height: 321px;
+}
+
+.fifth-card-container {
+  width: 262px;
+  height: 321px;
+}
+
+.six-card-container {
+  width: 262px;
+  height: 321px; 
+}
 
 .nintendo-banner {
   background-color: rgb(230, 0, 18);
