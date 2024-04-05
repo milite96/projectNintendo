@@ -3,17 +3,22 @@
     padding: 2.25rem 1rem;
     color: rgb(255, 255, 255);
     display: grid;
+    justify-items: end;
+    grid-template-columns: auto repeat(1, 1fr);
     align-items: center;
-   grid-template-columns: auto repeat(4,1fr);
+}
+.footer-nintendo-jpg {
+    justify-self: start;
+}
+.footer-social-logos {
+    display: grid;
+    grid-template-columns:auto repeat(4,58px);
+    
+    justify-items: end;
+    width: 100%;
     
 }
 
-.footer-social-logos {
-    display: grid;
-    grid-template-columns:auto repeat(4,1fr);
-    gap: 25px;
-    
-}
 .footer-linkbar {
     grid-template-columns: repeat(4, 1fr);
 }
