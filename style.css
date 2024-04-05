@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url("https://fonts.cdnfonts.com/css/museo-sans-rounded");
 
 body {
@@ -146,6 +148,35 @@ a:hover {
 #slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.first-banner {
+    height: auto;
+}
+
+.first-banner-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ESRB-10 {
+    display: flex;
+    align-items: center;
+}
+
+.ESRB-10 > img {
+    height: 60px;
+    width: 45px;
+}
+
+.third-banner-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-banner-footer > img {
+    height: 60px;
+    width: 90px;
 }
 
 #banner-footer {
