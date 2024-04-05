@@ -14,14 +14,35 @@
     gap: 25px;
     
 }
-
-.footer-links {
+.footer-linkbar {
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-about {
     border-left: 1px solid black;
     width: 200px;
     height: 200px;
-    padding: 20px;
+    padding-left: 1.5rem;
+}
+h1 {
+    color: rgb(68, 68, 68);
 }
 a {
     color: red;
     text-decoration: none;
+}
+a:hover {
+    color: rgb(131, 28, 28);
+    text-decoration: underline;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    list-style: none;
+}
+.footer-shop {
+    border-left: 1px solid black;
+    
+    padding-left: 1.5rem;
 }
