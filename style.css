@@ -10,6 +10,8 @@ body {
   color: rgb(72, 72, 72);
 }
 
+/* N A V B A R */
+
 header {
   font-family: "Museo Sans Rounded", sans-serif;
   font-weight: 600;
@@ -149,6 +151,10 @@ header a:hover {
   font-size: 18px;
 }
 
+/* B A N N E R */
+
+/* B A N N E R */
+
 .slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -214,6 +220,8 @@ header a:hover {
   border-radius: 10px;
 }
 
+/* F E A T U R E D */
+
 .featured {
   height: 397px;
   width: 100%;
@@ -233,16 +241,17 @@ header a:hover {
   color: black;
 }
 
-/* .card-noLinks:hover {
-   transform:
-} */
+.card-noLinks:hover .card-image-container {
+  position: relative;
+  /* top: -20px; */
+  transform: translateY(-20px);
+}
 
 .card-card {
   width: 260px;
   height: 311px;
   border: 1px solid rgb(196, 196, 196); /* provisional */
   border-radius: 15px;
-  overflow: hidden;
   font-weight: 700;
   font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -250,6 +259,10 @@ header a:hover {
 .card-image-container {
   width: 260px;
   height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: all ease-in-out 400ms;
 }
 
 .card-image-container img {
@@ -342,6 +355,8 @@ header a:hover {
   font-size: 0.875rem;
 }
 
+/* N E W S */
+
 .News-cards {
   display: flex;
   flex-wrap: wrap;
@@ -376,6 +391,8 @@ header a:hover {
   width: 262px;
   height: 321px;
 }
+
+/* C H A R A C T E R S */
 
 .characters {
   display: grid;
@@ -438,6 +455,8 @@ header a:hover {
   width: 230px;
   height: 230px;
 }
+
+/* F O O T E R */
 
 .footer-nintendo-baner {
   background-color: rgb(230, 0, 18);
