@@ -153,8 +153,6 @@ header a:hover {
 
 /* B A N N E R */
 
-/* B A N N E R */
-
 .slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
