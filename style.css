@@ -161,6 +161,10 @@ header a:hover {
   padding: 20px 45px;
 }
 
+.image-banner-slider {
+  width: 100vw;
+}
+
 .title-banner {
   font-family: "Montserrat";
   font-weight: bold;
