@@ -429,19 +429,56 @@ a:hover {
   height: 230px;
 }
 
-.nintendo-banner {
+.footer-nintendo-baner {
   background-color: rgb(230, 0, 18);
   padding: 2.25rem 1rem;
   color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-items: end;
+  grid-template-columns: auto repeat(1, 1fr);
   align-items: center;
 }
-.nintendo-banner-logo {
-  width: 195px;
-  height: 50px;
-  align-items: start;
+.footer-nintendo-jpg {
+  justify-self: start;
 }
-.social-logos {
-  display: flex;
+.footer-social-logos {
+  display: grid;
+  grid-template-columns:auto repeat(4,58px);
+  
+  justify-items: end;
+  width: 100%;
+  
+}
+
+.footer-linkbar {
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-about {
+  border-left: 1px solid black;
+  width: 200px;
+  height: 200px;
+  padding-left: 1.5rem;
+}
+h1 {
+  color: rgb(68, 68, 68);
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(131, 28, 28);
+  text-decoration: underline;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  list-style: none;
+}
+.footer-shop {
+  border-left: 1px solid black;
+  
+  padding-left: 1.5rem;
 }
