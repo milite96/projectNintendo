@@ -118,12 +118,30 @@ header {
 .featured {
   height: 397px;
   width: 100%;
+  padding: 48px 0px;
+  margin-left: 30px; /* provisional */
 }
+
+.card-layout {
+  display: flex;
+  flex-wrap: wrap;
+  height: 360px;
+  gap: 40px;
+}
+
+.card-noLinks {
+  text-decoration: none;
+  color: black;
+}
+
+/* .card-noLinks:hover {
+   transform:
+} */
 
 .card-card {
   width: 260px;
   height: 311px;
-  border: 2px solid #f1f1f1;
+  border: 1px solid rgb(196, 196, 196); /* provisional */
   border-radius: 15px;
   overflow: hidden;
   font-weight: 700;
@@ -145,7 +163,9 @@ header {
   height: 149px;
   padding-top: 16px;
   line-height: 1.4;
+  /* transition: transform 0.3 ease; */
 }
+
 .card-content-2 {
   padding: 0px 16px;
 }
@@ -165,15 +185,26 @@ header {
   /* letter-spacing: 0px; */
 }
 
-.card-tag {
-  display: flex;
+.card-tag-blue {
+  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
   justify-content: center;
   align-items: center;
   font-size: 0.75rem;
-  width: 66px;
   height: 19px;
   padding: 0px 8px;
   background-color: #4b5cce;
+  border-radius: 1rem;
+  color: white;
+}
+
+.card-tag-red {
+  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  height: 19px;
+  padding: 0px 8px;
+  background-color: rgb(230, 0, 18);
   border-radius: 1rem;
   color: white;
 }
@@ -212,26 +243,26 @@ header {
   font-size: 0.875rem;
 }
 
-.mario{
-    background-image: url(https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/mario-bg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.mario {
+  background-image: url(https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/mario-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nintendo-banner {
-    background-color: rgb(230, 0, 18);
-    padding: 2.25rem 1rem;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(230, 0, 18);
+  padding: 2.25rem 1rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nintendo-banner-logo {
-    width: 195px;
-    height: 50px;
-    align-items: start;
+  width: 195px;
+  height: 50px;
+  align-items: start;
 }
 .social-logos {
-    display: flex;
+  display: flex;
 }
