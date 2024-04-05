@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("https://fonts.cdnfonts.com/css/museo-sans-rounded");
 
@@ -19,7 +19,7 @@ header {
 
 header button:hover,
 select:hover,
-a:hover {
+header a:hover {
   color: red;
   cursor: pointer;
 }
@@ -157,32 +157,32 @@ a:hover {
 }
 
 .first-banner {
-    height: auto;
+  height: auto;
 }
 
 .first-banner-footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ESRB-10 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .ESRB-10 > img {
-    height: 60px;
-    width: 45px;
+  height: 60px;
+  width: 45px;
 }
 
 .third-banner-footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .third-banner-footer > img {
-    height: 60px;
-    width: 90px;
+  height: 60px;
+  width: 90px;
 }
 
 #banner-footer {
@@ -364,64 +364,64 @@ a:hover {
 
 .six-card-container {
   width: 262px;
-  height: 321px; 
+  height: 321px;
 }
 
-.characters{
+.characters {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 50px;
 }
-.mario-image{
+.mario-image {
   background-image: url("assets/characters/mario-bg.jpeg");
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 230px;
   height: 230px;
 }
-.zelda-image{
+.zelda-image {
   background-image: url("assets/characters/zelda-bg.jpeg");
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 230px;
   height: 230px;
 }
-.splatoon-image{
+.splatoon-image {
   background-image: url("assets/characters/splatoon-bg.png");
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 230px;
   height: 230px;
 }
-.kirby-image{
+.kirby-image {
   background-image: url("assets/characters/kirby-bg.png");
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 230px;
   height: 230px;
 }
-.pikmin-image{
+.pikmin-image {
   background-image: url("assets/characters/pikmin-bg.png");
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 230px;
   height: 230px;
 }
-.animal-image{
+.animal-image {
   background-image: url("assets/characters/animal-bg.jpeg");
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 230px;
   height: 230px;
 }
-.metroid-image{
+.metroid-image {
   background-image: url("assets/characters/metroid-bg.jpeg");
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 230px;
   height: 230px;
 }
-.pokémon-image{
+.pokémon-image {
   background-image: url("assets/characters/pokemon-bg.png");
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -443,11 +443,10 @@ a:hover {
 }
 .footer-social-logos {
   display: grid;
-  grid-template-columns:auto repeat(4,58px);
-  
+  grid-template-columns: auto repeat(4, 58px);
+
   justify-items: end;
   width: 100%;
-  
 }
 
 .footer-linkbar {
@@ -459,26 +458,26 @@ a:hover {
   height: 200px;
   padding-left: 1.5rem;
 }
-h1 {
+footer h1 {
   color: rgb(68, 68, 68);
 }
-a {
+footer a {
   color: red;
   text-decoration: none;
 }
-a:hover {
+footer a:hover {
   color: rgb(131, 28, 28);
   text-decoration: underline;
 }
-ul {
+footer ul {
   padding: 0px;
   margin: 0px;
 }
-li {
+footer li {
   list-style: none;
 }
 .footer-shop {
   border-left: 1px solid black;
-  
+
   padding-left: 1.5rem;
 }
