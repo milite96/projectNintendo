@@ -15,6 +15,11 @@ body {
 header {
   font-family: "Museo Sans Rounded", sans-serif;
   font-weight: 600;
+
+  /* Añadido por Christ */
+  position: relative;
+  z-index: 100;
+  background-color: white;
 }
 
 header button:hover,
@@ -156,6 +161,145 @@ header a:hover {
 .slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  z-index: 50;
+}
+
+.image-banner-slider-container, .image-banner-slider {
+  position: relative;
+}
+
+.image-banner-slider, .image-banner-spotlight-overlay {
+  width: 100vw;
+}
+
+.image-banner-spotlight-overlay {
+  position: absolute;
+  z-index: 20;
+  animation: fadeOut 1s forwards 2.5s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.image-banner-game-logo {
+  position: absolute;
+  z-index: 19;
+  width: 620px;
+  top: 67px;
+  left: -4px;
+  animation: backInRight 0.5s forwards 2.5s;
+}
+
+@keyframes backInRight {
+  0% {
+    transform: translateX(250px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.image-banner-blue-checkered-bg {
+  position: absolute;
+  z-index: 10;
+  width: 600px;
+  height: 480px;
+  object-fit: cover;
+  animation: bounceInLeft 0.3s linear forwards 2.5s;
+}
+
+@keyframes bounceInLeft {
+
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.curtain-center-container {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 50;
+}
+
+.curtain-center {
+  width: 100vw;
+  animation: slideOutUp 0.8s forwards 1.5s;
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.curtain-right-left-container {
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  top: 1px;
+  z-index: 49;
+}
+
+.curtain-right, .curtain-left {
+  width: 50%;
+  z-index: 10;
+}
+
+.curtain-left {
+  animation: slideOutLeft 0.8s forwards 1.5s;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden; 
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.curtain-right {
+  animation: slideOutRight 0.8s forwards 1.5s;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
 }
 
 .banner-info {
@@ -163,10 +307,6 @@ header a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 20px 45px;
-}
-
-.image-banner-slider {
-  width: 100vw;
 }
 
 .title-banner {
@@ -196,6 +336,11 @@ header a:hover {
 .esrb-et {
   height: 60px;
   width: 90px;
+}
+
+
+.image-banner-slider-peach-collection-overlay {
+  width: 100px;
 }
 
 .banner-footer {
