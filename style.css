@@ -164,8 +164,9 @@ header a:hover {
   grid-template-columns: repeat(3, 1fr);
   position: relative;
   z-index: 80;
-  overflow-x: scroll;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .image-banner-slider-container {
@@ -302,13 +303,13 @@ header a:hover {
   animation: backInUp 1.3s cubic-bezier(.67,-0.06,.55,.95) forwards;
 }
 
-.banner-footer {
+.banner-nav {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.banner-footer-button {
+.banner-nav-button {
   width: 56px;
   height: 56px;
   background-color: white;
@@ -317,7 +318,11 @@ header a:hover {
   cursor: pointer;
 }
 
-.banner-footer-button-img {
+.banner-nav-button a:hover {
+  pointer-events: none;
+}
+
+.banner-nav-button-img {
   width: 47.6px;
   height: 47.6px;
   object-fit: cover;
@@ -428,7 +433,6 @@ header a:hover {
     transform: translate3d(100%, 0, 0);
   }
 }
-
 
 /* F E A T U R E D */
 
