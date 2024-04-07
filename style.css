@@ -8,6 +8,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: rgb(72, 72, 72);
+  overflow-x: hidden;
 }
 
 /* N A V B A R */
@@ -162,7 +163,17 @@ header a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
-  z-index: 50;
+  z-index: 80;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.image-banner-slider-container {
+  height: 480px;
+}
+
+.image-banner-slider {
+  scroll-snap-align: center;
 }
 
 .image-banner-slider-container, .image-banner-slider {
@@ -173,133 +184,64 @@ header a:hover {
   width: 100vw;
 }
 
-.image-banner-spotlight-overlay {
-  position: absolute;
-  z-index: 20;
-  animation: fadeOut 1s forwards 2.5s;
+.image-banner-spotlight-overlay, .image-banner-blue-checkered-bg, .image-banner-slider, .second-image-banner, .third-image-banner {
+  height: 100%;
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
+.image-banner-spotlight-overlay {
+  position: absolute;
+  z-index: 10;
+  animation: fadeOut 1s forwards 2.5s;
 }
 
 .image-banner-game-logo {
   position: absolute;
-  z-index: 19;
+  z-index: 9;
   width: 620px;
   top: 67px;
   left: -4px;
   animation: backInRight 0.5s forwards 2.5s;
 }
 
-@keyframes backInRight {
-  0% {
-    transform: translateX(250px);
-  }
-
-  50% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
-}
-
 .image-banner-blue-checkered-bg {
   position: absolute;
-  z-index: 10;
-  width: 600px;
-  height: 480px;
-  object-fit: cover;
+  z-index: 8;
   animation: bounceInLeft 0.3s linear forwards 2.5s;
-}
-
-@keyframes bounceInLeft {
-
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(10px, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
 }
 
 .curtain-center-container {
   position: absolute;
   top: 0;
   width: 100vw;
-  z-index: 50;
+  z-index: 30;
 }
 
 .curtain-center {
   width: 100vw;
+  height: inherit;
   animation: slideOutUp 0.8s forwards 1.5s;
-}
-
-@keyframes slideOutUp {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(0, -100%, 0);
-  }
 }
 
 .curtain-right-left-container {
   width: 100vw;
+  height: 100%;
   display: flex;
   position: absolute;
-  top: 1px;
-  z-index: 49;
+  top: 0;
+  z-index: 29;
 }
 
 .curtain-right, .curtain-left {
   width: 50%;
-  z-index: 10;
+  height: inherit;
 }
 
 .curtain-left {
   animation: slideOutLeft 0.8s forwards 1.5s;
 }
 
-@keyframes slideOutLeft {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden; 
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
 .curtain-right {
   animation: slideOutRight 0.8s forwards 1.5s;
-}
-
-@keyframes slideOutRight {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(100%, 0, 0);
-  }
 }
 
 .banner-info {
@@ -338,9 +280,26 @@ header a:hover {
   width: 90px;
 }
 
+.second-image-banner, .third-image-banner {
+  z-index: 31;
+}
 
 .image-banner-slider-peach-collection-overlay {
-  width: 100px;
+  position: absolute;
+  z-index: 32;
+  width: 477px;
+  right: 130px;
+  top: 127px;
+  animation: backInLeft cubic-bezier(.67,-0.06,.55,.95) 1.3s forwards;
+}
+
+.image-banner-slider-third-banner-title {
+  position: absolute;
+  z-index: 32;
+  width: 535px;
+  top: 35px;
+  right: 500px;
+  animation: backInUp 1.3s cubic-bezier(.67,-0.06,.55,.95) forwards;
 }
 
 .banner-footer {
@@ -350,6 +309,8 @@ header a:hover {
 }
 
 .banner-footer-button {
+  width: 56px;
+  height: 56px;
   background-color: white;
   border: none;
   text-decoration: none;
@@ -357,11 +318,117 @@ header a:hover {
 }
 
 .banner-footer-button-img {
-  width: 56px;
-  height: 56px;
+  width: 47.6px;
+  height: 47.6px;
   object-fit: cover;
   border-radius: 10px;
 }
+
+/* Animaciones */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes backInRight {
+  0% {
+    transform: translateX(250px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateX(4px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes backInUp {
+  0% {
+    transform: translateY(10px);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(-2px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bounceInLeft {
+
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
 
 /* F E A T U R E D */
 
