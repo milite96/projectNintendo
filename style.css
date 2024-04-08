@@ -88,17 +88,19 @@ a:hover {
 }
 
 .navbar-right-links {
+  margin-right: 20px;
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
 
 .navbar-right-links a {
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   gap: 10px;
   color: darkslategray;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .navbar-right-links a:hover {
@@ -130,6 +132,7 @@ a:hover {
   border: none;
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .navbar-header-bottom a {
@@ -138,11 +141,27 @@ a:hover {
   display: flex;
   gap: 5px;
   font-size: small;
+  letter-spacing: 1px;
 }
 .navbar-header-bottom button i {
   font-size: 18px;
 }
 
+.navbar-mynintendo-store-button{
+  width: 180px;
+}
+
+.navbar-games-buttons{
+  width: 115px;
+}
+
+.navbar-ns-buttons{
+  width: 180px;
+}
+
+.navbar-playnint-buttons{
+  width: 180px;
+}
 #slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
