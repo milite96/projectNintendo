@@ -135,6 +135,8 @@ header a:hover {
   background-color: transparent;
   display: flex;
   gap: 5px;
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-weight: 600;
 }
 
 .navbar-header-bottom select {
@@ -157,7 +159,24 @@ header a:hover {
   font-size: 18px;
 }
 
-/* B A N N E R */
+#navbar-mynintendo-store-menu{
+  visibility: visible;
+}
+
+#navbar-mynintendo-store-menu {
+  position: absolute;
+  top: 94px;
+  background-color: white;
+}
+
+#navbar-mynintendo-store-button:hover #navbar-mynintendo-store-menu{
+  visibility: visible;
+}
+
+#navbar-mynintendo-store-ul{
+  display: flex;
+}
+
 
 .navbar-mynintendo-store-button{
   width: 180px;
@@ -174,6 +193,10 @@ header a:hover {
 .navbar-playnint-buttons{
   width: 180px;
 }
+
+/* B A N N E R */
+
+
 #slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
