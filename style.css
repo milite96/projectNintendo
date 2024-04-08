@@ -343,6 +343,15 @@ header a:hover {
   font-size: 0.875rem;
 }
 
+/* O N L I N E  S T O R E */
+
+.onlineStore{
+  height: 378px;
+  width: 100%;
+  padding: 48px 0px;
+}
+
+
 /* N E W S */
 
 .News-cards {
