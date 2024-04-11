@@ -219,6 +219,7 @@ header a:hover {
 
 .card-layout {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   width: 3000px;
   height: 360px;
@@ -476,12 +477,14 @@ margin-bottom: 32px;
 .bs-container{
   display: flex;
   align-items: center;
+  
 }
 
 .bs-container h1 {
   margin: 0 6px 0 0;
   padding-right: 16px;
   border-right: 0.8px solid gray;
+  
 }
 
 .bs-container a {
@@ -502,15 +505,17 @@ margin-bottom: 32px;
 
  .bs-layout {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   width: 3000px;
-  height: 360px;
+  height: 365px;
   gap: 40px;
 }
 
 .bs-noLinks {
   text-decoration: none;
   color: black;
+  height: 311px;
 }
 
 .bs-noLinks:hover .bs-image-container {
@@ -551,11 +556,13 @@ margin-bottom: 32px;
 }
 
 .bs-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0px 16px;
 }
 
 .bs-h3-container {
-  display: flex;
   width: 100%;
   height: 64px;
   margin-bottom: 16px;
@@ -565,48 +572,25 @@ margin-bottom: 32px;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  height: 45px; /* se le da la altura que tiene en la web de nintendo */
+  height:auto; /* se le da la altura que tiene en la web de nintendo */
   /* letter-spacing: 0px; */
 }
 .bs-h3-container h3:hover {
   color:#e60012;
 }
 
-.bs-tag-blue {
-  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
-  justify-content: center;
-  align-items: center;
+.bs-date{
   font-size: 0.75rem;
-  height: 19px;
-  padding: 0px 8px;
-  background-color: #4b5cce;
-  border-radius: 1rem;
-  color: white;
+  font-weight: 200;
+  margin-top: 0.25rem;
+
 }
 
-.bs-tag-red {
-  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
-  justify-content: center;
-  align-items: center;
-  font-size: 0.75rem;
-  height: 19px;
-  padding: 0px 8px;
-  background-color: rgb(230, 0, 18);
-  border-radius: 1rem;
-  color: white;
+.bs-price {
+  display:flex;
+  margin-bottom: 8px;
 }
 
-.bs-tag-purple {
-  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
-  justify-content: center;
-  align-items: center;
-  font-size: 0.75rem;
-  height: 19px;
-  padding: 0px 8px;
-  background-color: #9531b9;
-  border-radius: 1rem;
-  color: white;
-}
 .bs-spacing {
   display: flex;
   width: 8px;
@@ -615,8 +599,9 @@ margin-bottom: 32px;
 
 .bs-footer-grid-container {
   display: grid;
+  grid-template-columns: 1fr 2.5rem;
   width: 228px;
-  height: 24px;
+  height: 1.5rem;
   margin-bottom: 16px;
 }
 
@@ -639,6 +624,50 @@ margin-bottom: 32px;
   display: flex;
   font-weight: 100;
   font-size: 0.875rem;
+}
+
+.bs-heart-filled {
+  opacity: 0;
+}
+
+.bs-sparks{
+  opacity: 0;
+}
+
+.bs-heart-button{
+  display:flex;
+  align-items: center;
+  appearance: none;
+  border: medium;
+  background: none;
+  cursor:pointer;
+  color: rgb(230, 0, 18);
+  font-size: 1em;
+  line-height: 1;
+}
+
+.bs-heart-button:visited .bs-heart-filled { 
+  opacity:1;
+}
+.bs-heart-button:hover  {
+  color:rgb(172, 0, 13);
+  
+}
+
+.bs-heart-button svg{
+  display: block;
+  width: 3em;
+  height: 3em;
+  flex: 0 0 auto;
+  margin: -0.75em;
+}
+
+.bs-heart-button:hover .bs-sparks {
+  opacity: 1;
+  color:rgb(172, 0, 13);
+  transition: 1000ms;
+  stroke-dasharray: 8px;
+  stroke-dashoffset: 24px;
 }
 
 /* F O O T E R */
