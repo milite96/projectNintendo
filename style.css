@@ -883,66 +883,125 @@ header li {
 
 /* C H A R A C T E R S */
 
-.characters {
+/* .characters{
+  margin-left: 350px;
+  margin-right: 350px; 
+} */
+.characters-title{
+  font-size: 29px;
+}
+.protagonists {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 50px;
 }
+.characters-link img:hover{
+    transform: scale(1.15);
+    transition: all 200ms;
+}
 .mario-image {
   background-image: url("assets/characters/mario-bg.jpeg");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.mario-image img{
+  width: 280px;
+  height: 280px;
 }
 .zelda-image {
   background-image: url("assets/characters/zelda-bg.jpeg");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.zelda-image img{
+  width: 280px;
+  height: 280px;
 }
 .splatoon-image {
   background-image: url("assets/characters/splatoon-bg.png");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.splatoon-image img{
+  width: 280px;
+  height: 280px;
 }
 .kirby-image {
   background-image: url("assets/characters/kirby-bg.png");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.kirby-image img{
+  width: 280px;
+  height: 280px;
 }
 .pikmin-image {
   background-image: url("assets/characters/pikmin-bg.png");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.pikmin-image img{
+  width: 280px;
+  height: 280px;
 }
 .animal-image {
   background-image: url("assets/characters/animal-bg.jpeg");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.animal-image img{
+  width: 280px;
+  height: 280px;
 }
 .metroid-image {
   background-image: url("assets/characters/metroid-bg.jpeg");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.metroid-image img{
+  width: 280px;
+  height: 280px;
 }
 .pokémon-image {
   background-image: url("assets/characters/pokemon-bg.png");
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 10px;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.pokémon-image img{
+  width: 280px;
+  height: 280px;
 }
 
 /* D I G I T A L   B E S T   S E L L E R S */
