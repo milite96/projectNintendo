@@ -288,7 +288,7 @@ header a:hover {
 }
 
 .card-h3-container h3:hover {
-  color:#e60012;
+  color: #e60012;
 }
 
 .card-tag-blue {
@@ -466,44 +466,41 @@ header a:hover {
   padding: 48px 0px;
 }
 
-.digital-margin{
-  margin:0px 30px ; /*en la pagina pone auto, pero no me salen margenes si lo pongo igual*/
+.digital-margin {
+  margin: 0px 30px; /*en la pagina pone auto, pero no me salen margenes si lo pongo igual*/
 }
 
-.best-sellers{
-margin-bottom: 32px;
+.best-sellers {
+  margin-bottom: 32px;
 }
 
-.bs-container{
+.bs-container {
   display: flex;
   align-items: center;
-  
 }
 
 .bs-container h1 {
   margin: 0 6px 0 0;
   padding-right: 16px;
   border-right: 0.8px solid gray;
-  
 }
 
 .bs-container a {
- color: #e60012;
- font-weight: 600;
-
+  color: #e60012;
+  font-weight: 600;
 }
 
 .bs-container a:hover {
   color: rgb(172, 0, 13);
- }
+}
 
-.square-16x16{
-  display:flex;
+.square-16x16 {
+  display: flex;
   height: 16px;
   width: 16px;
- }
+}
 
- .bs-layout {
+.bs-layout {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -572,22 +569,25 @@ margin-bottom: 32px;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  height:auto; /* se le da la altura que tiene en la web de nintendo */
+  height: auto; /* se le da la altura que tiene en la web de nintendo */
   /* letter-spacing: 0px; */
 }
 .bs-h3-container h3:hover {
-  color:#e60012;
+  color: #e60012;
 }
 
-.bs-date{
+.TM {
+  font-size: 12px;
+}
+
+.bs-date {
   font-size: 0.75rem;
   font-weight: 200;
   margin-top: 0.25rem;
-
 }
 
 .bs-price {
-  display:flex;
+  display: flex;
   margin-bottom: 8px;
 }
 
@@ -630,31 +630,30 @@ margin-bottom: 32px;
   opacity: 0;
 }
 
-.bs-sparks{
+.bs-sparks {
   opacity: 0;
 }
 
-.bs-heart-button{
-  display:flex;
+.bs-heart-button {
+  display: flex;
   align-items: center;
   appearance: none;
   border: medium;
   background: none;
-  cursor:pointer;
+  cursor: pointer;
   color: rgb(230, 0, 18);
   font-size: 1em;
   line-height: 1;
 }
 
-.bs-heart-button:visited .bs-heart-filled { 
-  opacity:1;
+.bs-heart-button:visited .bs-heart-filled {
+  opacity: 1;
 }
-.bs-heart-button:hover  {
-  color:rgb(172, 0, 13);
-  
+.bs-heart-button:hover {
+  color: rgb(172, 0, 13);
 }
 
-.bs-heart-button svg{
+.bs-heart-button svg {
   display: block;
   width: 3em;
   height: 3em;
@@ -664,11 +663,272 @@ margin-bottom: 32px;
 
 .bs-heart-button:hover .bs-sparks {
   opacity: 1;
-  color:rgb(172, 0, 13);
+  color: rgb(172, 0, 13);
   transition: 1000ms;
   stroke-dasharray: 8px;
   stroke-dashoffset: 24px;
 }
+
+.bs-red-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 311px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #e60012;
+  color: white;
+  cursor: pointer;
+}
+
+.bs-red-button:hover {
+  background-color: rgb(172, 0, 13);
+  height: calc(311px - 2px);
+  width: calc(145px - 2px);
+}
+
+/* D I G I T A L  N E W  R E L E A S E S */
+
+.nr-container {
+  display: flex;
+  align-items: center;
+}
+
+.nr-container h1 {
+  margin: 0 6px 0 0;
+  padding-right: 16px;
+  border-right: 0.8px solid gray;
+}
+
+.nr-container a {
+  color: #e60012;
+  font-weight: 600;
+}
+
+.nr-container a:hover {
+  color: rgb(172, 0, 13);
+}
+
+.nr-layout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3000px;
+  height: 365px;
+  gap: 40px;
+}
+
+.nr-noLinks {
+  text-decoration: none;
+  color: black;
+  height: 311px;
+}
+
+.nr-noLinks:hover .nr-image-container {
+  position: relative;
+  /* top: -20px; */
+  transform: translateY(-20px);
+}
+
+.nr-card {
+  width: 260px;
+  height: 311px;
+  border: 1px solid rgb(196, 196, 196); /* provisional */
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.nr-image-container {
+  width: 260px;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: all ease-in-out 400ms;
+}
+
+.nr-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.nr-content-1 {
+  display: flex;
+  height: 149px;
+  padding-top: 16px;
+  line-height: 1.4;
+  /* transition: transform 0.3 ease; */
+}
+
+.nr-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.nr-h3-container {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.nr-h3-container h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  height: auto; /* se le da la altura que tiene en la web de nintendo */
+  /* letter-spacing: 0px; */
+}
+.nr-h3-container h3:hover {
+  color: #e60012;
+}
+
+.nr-date {
+  font-size: 0.75rem;
+  font-weight: 200;
+  margin-top: 0.25rem;
+}
+
+.nr-tag-red{
+  font-size: 0.75rem;
+  width: fit-content;
+  height: 19px;
+  padding: 0px 8px;
+  margin-bottom: 8px;
+  background-color: rgb(230, 0, 18);
+  border-radius: 1rem;
+  color: white;
+}
+
+.nr-price-container{
+  display: flex;
+  align-items: center;
+}
+  
+.nr-price {
+  margin-bottom: 8px;
+}
+
+.nr-del{
+  font-weight: 100;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.nr-sale{
+  align-self: center;
+  background-color: #e60012;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px;
+  margin-left:10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: fit-content;
+}
+
+.nr-spacing {
+  display: flex;
+  width: 8px;
+  height: 8px;
+}
+
+.nr-footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2.5rem;
+  width: 228px;
+  height: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.nr-footer-flex-container {
+  display: flex;
+  align-items: center;
+  width: 188px;
+  height: 24px;
+}
+
+.nr-red-stick {
+  display: flex;
+  width: 2px;
+  height: 16px;
+  background-color: #e60012;
+  margin-right: 6px;
+}
+
+.nr-console {
+  display: flex;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+
+.nr-heart-filled {
+  opacity: 0;
+}
+
+.nr-sparks {
+  opacity: 0;
+}
+
+.nr-heart-button {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  border: medium;
+  background: none;
+  cursor: pointer;
+  color: rgb(230, 0, 18);
+  font-size: 1em;
+  line-height: 1;
+}
+
+.nr-heart-button:visited .nr-heart-filled {
+  opacity: 1;
+}
+.nr-heart-button:hover {
+  color: rgb(172, 0, 13);
+}
+
+.nr-heart-button svg {
+  display: block;
+  width: 3em;
+  height: 3em;
+  flex: 0 0 auto;
+  margin: -0.75em;
+}
+
+.nr-heart-button:hover .nr-sparks {
+  opacity: 1;
+  color: rgb(172, 0, 13);
+  transition: 1000ms;
+  stroke-dasharray: 8px;
+  stroke-dashoffset: 24px;
+}
+
+.nr-red-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 311px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #e60012;
+  color: white;
+  cursor: pointer;
+}
+
+.nr-red-button:hover {
+  background-color: rgb(172, 0, 13);
+  height: calc(311px - 2px);
+  width: calc(145px - 2px);
+}
+
 
 /* F O O T E R */
 
