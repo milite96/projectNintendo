@@ -1538,19 +1538,19 @@ header li {
 footer h1 {
   color: rgb(68, 68, 68);
 }
-a {
+footer a {
   color: red;
   text-decoration: none;
 }
-a:hover {
+footer a:hover {
   color: rgb(131, 28, 28);
   text-decoration: underline;
 }
-ul {
+footer ul {
   padding: 0px;
   margin: 0px;
 }
-li {
+footer li {
   list-style: none;
 }
 .footer-shop {
