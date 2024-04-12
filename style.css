@@ -360,6 +360,85 @@ header a:hover {
   font-size: 0.875rem;
 }
 
+/* O N L I N E  S T O R E */
+
+.onlineStore {
+  height: 378px;
+  width: 100%;
+  padding: 48px 0px;
+}
+
+.onlineStore-margin {
+  margin: 0 246px;
+}
+
+.onlineStore-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.onlineStore-banner {
+  border-radius: 15px;
+}
+
+.onlineStore-container {
+  display: flex;
+  width: 800px;
+  margin-top: 20px;
+}
+
+.onlineStore-text {
+  width: 650px;
+  font-weight: 600;
+}
+
+.onlineStore-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+/* .onlineStore-btn-container:hover .onlineStore-btn {
+  background-color: rgb(114, 21, 21); */
+/* } */
+
+.onlineStore-btn {
+  display: inline-flex;
+  height: 38px;
+  width: 130px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background-color: rgb(230, 0, 18);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.onlineStore-btn-container:hover .onlineStore-btn {
+  animation: bounce-in 0.7s;
+  background-color: rgb(172, 0, 13);
+}
+@keyframes bounce-in {
+  30% {
+    transform: scale(1.03);
+  }
+  50% {
+    transform: scale(0.97);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.no-links {
+  text-decoration: none;
+  color: white;
+}
+
 /* N E W S */
 
 .News-cards {
