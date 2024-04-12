@@ -279,8 +279,11 @@ header li {
 
 .navbar-games-button-style a{
   font-weight: 100;
+  text-align: center;
 }
-
+#navbar-games-button-style-a{
+  margin-top: 16px;
+}
 #navbar-ns-menu{
   position: absolute;
   top: 92px;
@@ -296,6 +299,22 @@ header li {
 .navbar-ns-buttons:hover + #navbar-ns-menu{
   visibility: visible;
 }
+
+#navbar-ns-lineup button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  height: 75px;
+}
+#navbar-ns-button-style button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  height: 75px;
+  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #navbar-playnint-menu{
   position: absolute;
   top: 92px;
