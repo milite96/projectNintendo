@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -23,238 +23,293 @@
     <link rel="stylesheet" href="style.css" />
     <title>Nintendo Official Site: Consoles, Games, News, and More</title>
   </head>
-  <body>
 
+  <body>
     <!-- H E A D E R -->
 
     <header>
       <nav>
-          <div class="navbar-header-top">
-              <div class="navbar-first-group">
-                <span class="navbar-icon">
-                  <img
-                    src="assets/nintendo.png"
-                    alt="logo de nintendo"
-                    class="navbar-logo-nintendo"
-                  />
-                </span>
-                <div class="lower-bar">
-                  <i
-                      class="fa-solid fa-magnifying-glass"
-                      id="navbar-search-icon"
-                    ></i>
-                  <button class="navbar-search-button">
-                    <input
-                      type="search"
-                      name="search-bar"
-                      class="navbar-search-bar"
-                      id="navbar-search-bar"
-                      placeholder="Search"
-                    />
-                  </button>
-                  <select
-                    name="allcategories"
-                    id="navbar-dropdown-categories"
-                    class="navbar-dropdown-categories"
-                  >
-                    <option><a href="#">All categories</a></option>
-                    <option><a href="#">Games</a></option>
-                    <option><a href="#">Hardware</a></option>
-                    <option><a href="#">Merchandise</a></option>
-                    <option><a href="#">News & Events</a></option>
-                    <option><a href="#">Support</a></option>
-                  </select>
-                </div>
-              </div>
-            <div class="navbar-right-links">
-              <a href="#" class="navbar-link-support">
-                <i class="fa-solid fa-message"></i>Support</a
+        <div class="navbar-header-top">
+          <div class="navbar-first-group">
+            <span class="navbar-icon">
+              <img
+                src="assets/nintendo.png"
+                alt="logo de nintendo"
+                class="navbar-logo-nintendo"
+              />
+            </span>
+            <div class="lower-bar">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                id="navbar-search-icon"
+              ></i>
+              <button class="navbar-search-button">
+                <input
+                  type="search"
+                  name="search-bar"
+                  class="navbar-search-bar"
+                  id="navbar-search-bar"
+                  placeholder="Search"
+                />
+              </button>
+              <select
+                name="allcategories"
+                id="navbar-dropdown-categories"
+                class="navbar-dropdown-categories"
               >
-              <a href="#" class="navbar-link-wishlist">
-                <i class="fa-solid fa-heart"></i>Wish List</a
-              >
-              <a href="#" class="navbar-link-cart">
-                <i class="fa-solid fa-cart-shopping"></i>Cart</a
-              >
-              <a href="#" class="navbar-link-login">
-                <i class="fa-solid fa-user"></i>Log in / Sign up</a
-              >
-              <a href="#" class="navbar-link-regionselect">
-                <i class="fa-solid fa-flag"></i
-              ></a>
+                <option><a href="#">All categories</a></option>
+                <option><a href="#">Games</a></option>
+                <option><a href="#">Hardware</a></option>
+                <option><a href="#">Merchandise</a></option>
+                <option><a href="#">News & Events</a></option>
+                <option><a href="#">Support</a></option>
+              </select>
             </div>
           </div>
-          <div class="navbar-header-bottom">
-            <button class="navbar-mynintendo-store-button">
-              <i class="fa-brands fa-square-threads"></i
-              ><select name="navbar-mynintendo-store" id="navbar-nintendo-store">
-                <option value="none" selected disabled hidden>
-                  My Nintendo Store
-                </option>
-                <!-- button? -->
-                <ul class="navbar-mynintendo-games">
-                  <option>
-                    <li><a href="#">Games</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Nintendo Switch games</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">New releases</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Sales & Deals</a></li>
-                  </option>
-                </ul>
-                <ul class="navbar-mynintendo-hardware">
-                  <option>
-                    <li><a href="#">Hardware</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Nintendo Switch systems</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Joy-Con & controllers</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Cases & more</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Replacement parts</a></li>
-                  </option>
-                </ul>
-                <ul class="navbar-mynintendo-merchandise">
-                  <option>
-                    <li><a href="#">Merchandise</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Apparel & accesories</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Home & office</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Plush</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Toys</a></li>
-                  </option>
-                </ul>
-                <ul class="navbar-mynintendo-store-exclusives">
-                  <option>
-                    <li><a href="#">Store exclusives</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Exclusive products</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">My Nintendo rewards</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Nintendo Switch Online offers</a></li>
-                  </option>
-                </ul>
-                <ul class="navbar-mynintendo-characters">
-                  <option>
-                    <li><a href="#">Characters</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Pimkin</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Splatoon</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">Super Mario</a></li>
-                  </option>
-                  <option>
-                    <li><a href="#">The Legend of Zelda</a></li>
-                  </option>
-                </ul>
-                <option><a href="#">Sales & Deals</a></option>
-                <option><a href="#">Shop all</a></option>
-              </select>
-            </button>
-            <button class="navbar-games-buttons">
-              <i class="fa-solid fa-gamepad"></i
-              ><select name="games" id="navbar-games-buttons">
-                <option value="none" selected disabled hidden>Games</option>
-                <option><a href="#">Nintendo Switch Games</a></option>
-                <option><a href="#">New Releases</a></option>
-                <option><a href="#">Coming Soon</a></option>
-                <option><a href="#">Shop games</a></option>
-              </select>
-            </button>
-            <button class="navbar-ns-buttons">
-              <i class="fa-solid fa-pause"></i>
-              <select name="nintendo-switch" id="navbar-ns-buttons">
-                <option value="none" selected disabled hidden>
-                  Nintendo Switch
-                </option>
-                <option><a href="#">Nintendo Switch lineup</a></option>
-                <option><a href="#">Compare systems</a></option>
-                <option><a href="#">Online service</a></option>
-                <option><a href="#">Accessories</a></option>
-                <option><a href="#">Shop systems</a></option>
-              </select>
-            </button>
-            <a href="#" id="news-events"> <i class="fa-solid fa-message"></i>News & Events</a>
-            <button class="navbar-playnint-buttons">
-              <i class="fa-solid fa-star"></i>
-              <select name="play-nintendo" id="navbar-playnint-buttons">
-                <option value="none" selected disabled hidden>
-                  Play Nintendo
-                </option>
-                <option><a href="#">For kids</a></option>
-                <option><a href="#">For parents</a></option>
-              </select>
-            </button>
+          <div class="navbar-right-links">
+            <a href="#" class="navbar-link-support">
+              <i class="fa-solid fa-message"></i>Support</a
+            >
+            <a href="#" class="navbar-link-wishlist">
+              <i class="fa-solid fa-heart"></i>Wish List</a
+            >
+            <a href="#" class="navbar-link-cart">
+              <i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+            <a href="#" class="navbar-link-login">
+              <i class="fa-solid fa-user"></i>Log in / Sign up</a
+            >
+            <a href="#" class="navbar-link-regionselect">
+              <i class="fa-solid fa-flag"></i
+            ></a>
           </div>
+        </div>
+        <div class="navbar-header-bottom">
+          <button
+            class="navbar-mynintendo-store-button"
+            id="navbar-mynintendo-store-button"
+          >
+            <i class="fa-brands fa-square-threads"></i>
+            My Nintendo Store
+          </button>
+          <div
+            class="navbar-mynintendo-store-menu"
+            id="navbar-mynintendo-store-menu"
+          >
+            <img
+              src="assets/Captura de pantalla 2024-04-08 133719.png"
+              alt=""
+            />
+            <div
+              class="navbar-mynintendo-store-ul"
+              id="navbar-mynintendo-store-ul"
+            >
+              <ul>
+                <li class="navbar-li-title">
+                  <a href="#"><i class="fa-solid fa-gamepad"></i>Games</a>
+                </li>
+                <li><a href="#">Nintendo Switch games</a></li>
+                <li><a href="#">New releases</a></li>
+                <li><a href="#">Sales & Deals</a></li>
+              </ul>
+              <ul>
+                <li class="navbar-li-title">
+                  <a href="#"><i class="fa-solid fa-gamepad"></i>Hardware</a>
+                </li>
+                <li><a href="#">Nintendo Switch systems</a></li>
+                <li><a href="#">Joy-Con & controllers</a></li>
+                <li><a href="#">Cases & more</a></li>
+                <li><a href="#">Replacement parts</a></li>
+              </ul>
+              <ul>
+                <li class="navbar-li-title">
+                  <a href="#"><i class="fa-solid fa-shirt"></i>Merchandise</a>
+                </li>
+                <li><a href="#">Apparel & accesories</a></li>
+                <li><a href="#">Home & office</a></li>
+                <li><a href="#">Plush</a></li>
+                <li><a href="#">Toys</a></li>
+              </ul>
+              <ul>
+                <li class="navbar-li-title">
+                  <a href="#"
+                    ><i class="fa-solid fa-star"></i>Store exclusives</a
+                  >
+                </li>
+                <li><a href="#">Exclusive products</a></li>
+                <li><a href="#">My Nintendo rewards</a></li>
+                <li><a href="#">Nintendo Switch Online offers</a></li>
+              </ul>
+              <ul>
+                <li class="navbar-li-title">
+                  <a href="#"><i class="fa-solid fa-person"></i>Characters</a>
+                </li>
+                <li><a href="#">Pimkin</a></li>
+                <li><a href="#">Splatoon</a></li>
+                <li><a href="#">Super Mario</a></li>
+                <li><a href="#">The Legend of Zelda</a></li>
+              </ul>
+              <div class="navbar-sales">
+                <a href="#"><i class="fa-solid fa-tag"></i>Sales & Deals</a>
+                <a href="#"><i class="fa-solid fa-star"></i>Recommendations</a>
+              </div>
+            </div>
+
+            <div>
+              <button class="navbar-shopall-button" id="navbar-shopall-button">
+                <a href="#">Shop all</a>
+              </button>
+            </div>
+          </div>
+          <button class="navbar-games-buttons">
+            <i class="fa-solid fa-gamepad"></i>
+            Games
+          </button>
+          <div class="navbar-games-menu" id="navbar-games-menu">
+            <div class="navbar-games-button-style" id="navbar-games-button-style-a">
+              <button><i class="fa-solid fa-pause"></i></button
+              ><a href="#">Nintendo Switch Games</a>
+            </div>
+            <div class="navbar-games-button-style">
+              <button><i class="fa-solid fa-bullhorn"></i></button
+              ><a href="#">New Releases</a>
+            </div>
+            <div class="navbar-games-button-style">
+              <button><i class="fa-regular fa-calendar-days"></i></button
+              ><a href="#">Coming Soon</a>
+            </div>
+            <div class="navbar-games-button-style">
+              <button><i class="fa-solid fa-gamepad"></i></button
+              ><a href="#">Shop games</a>
+            </div>
+          </div>
+          <button class="navbar-ns-buttons">
+            <i class="fa-solid fa-pause"></i>
+            Nintendo Switch
+          </button>
+          <div class="navbar-ns-menu" id="navbar-ns-menu">
+            <div class="navbar-ns-button-style" id="navbar-ns-lineup">
+              <button>
+                <img
+                  src="assets/Captura de pantalla 2024-04-08 161858.png"
+                  alt="tres switchs"
+                /></button
+              ><a href="#">Nintendo Switch lineup</a>
+            </div>
+            <div class="navbar-ns-button-style" id="navbar-ns-button-style">
+              <button>
+                <i
+                  class="fa-solid fa-down-left-and-up-right-to-center"
+                ></i></button
+              ><a href="#">Compare systems</a>
+            </div>
+            <div class="navbar-ns-button-style" id="navbar-ns-button-style">
+              <button><img src="assets/online.png" alt="online icon" /></button
+              ><a href="#">Online service</a>
+            </div>
+            <div class="navbar-ns-button-style" id="navbar-ns-button-style">
+              <button>
+                <img
+                  src="assets/controller.png"
+                  alt="controller pro icon"
+                /></button
+              ><a href="#">Accessories</a>
+            </div>
+            <div class="navbar-ns-button-style" id="navbar-ns-button-style">
+              <button>
+                <img
+                  src="assets/shopsystems_icon.png"
+                  alt="white switch icon"
+                /></button
+              ><a href="#">Shop systems</a>
+            </div>
+          </div>
+          <a href="#" id="news-events">
+            <i class="fa-solid fa-message"></i>News & Events</a
+          >
+          <button class="navbar-playnint-buttons">
+            <i class="fa-solid fa-star"></i>
+            Play Nintendo
+          </button>
+          <div class="navbar-playnint-menu" id="navbar-playnint-menu">
+            <div class="navbar-playnint-button-style">
+              <button>
+                <i class="fa-regular fa-face-smile"></i
+                ><i class="fa-regular fa-face-smile"></i>
+              </button>
+              <a href="#">For kids</a>
+            </div>
+            <div class="navbar-playnint-button-style">
+              <button>
+                <i class="fa-solid fa-face-smile"></i
+                ><i class="fa-regular fa-face-smile"></i></button
+              ><a href="#">For parents</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <!-- B A N N E R -->
 
     <div id="slider">
-        <div class="first-banner">
-            <img src="assets/images/main-asset.avif" alt="First Peach Banner">
-            <div class="first-banner-footer">
-                <p>Download the free demo and step into the spotlight with Princess Peach</p>
-                <div class="ESRB-10">
-                    <img src="assets/images/esrb10.svg" alt="ESRB +10">
-                    <p>Fantasy Violence</p>
-                </div>
-            </div>
+      <div class="first-banner">
+        <img src="assets/images/main-asset.avif" alt="First Peach Banner" />
+        <div class="first-banner-footer">
+          <p>
+            Download the free demo and step into the spotlight with Princess
+            Peach
+          </p>
+          <div class="ESRB-10">
+            <img src="assets/images/esrb10.svg" alt="ESRB +10" />
+            <p>Fantasy Violence</p>
+          </div>
         </div>
+      </div>
 
-        <div class="second-banner">
-            <img src="assets/images/CS-Peach-Collection-Desktop-main-asset.avif" alt="Peach Collection Desktop">
-            <div class="second-banner-footer">
-                <p>Browse the Peach™ Collection in the My Nintendo Store</p>
-            </div>
+      <div class="second-banner">
+        <img
+          src="assets/images/CS-Peach-Collection-Desktop-main-asset.avif"
+          alt="Peach Collection Desktop"
+        />
+        <div class="second-banner-footer">
+          <p>Browse the Peach™ Collection in the My Nintendo Store</p>
         </div>
+      </div>
 
-        <div class="third-banner">
-            <img src="assets/images/CS-Leading-Ladies-Desktop-main-asset.avif" alt="Powerful Women Characters">
-            <div class="third-banner-footer">
-                <p>Take control and play as powerful women characters</p>
-                <img src="assets/images/esrb-e_t.png" alt="ESRB E-T">
-            </div>
+      <div class="third-banner">
+        <img
+          src="assets/images/CS-Leading-Ladies-Desktop-main-asset.avif"
+          alt="Powerful Women Characters"
+        />
+        <div class="third-banner-footer">
+          <p>Take control and play as powerful women characters</p>
+          <img src="assets/images/esrb-e_t.png" alt="ESRB E-T" />
         </div>
+      </div>
     </div>
 
     <div id="banner-footer">
-        <button type="button">
-            <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Princess%20Peach%20Showtime%20-%20Animated/peach-thumbnail-blue" alt="">
-        </button>
+      <button type="button">
+        <img
+          src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Princess%20Peach%20Showtime%20-%20Animated/peach-thumbnail-blue"
+          alt=""
+        />
+      </button>
 
-        <button type="button">
-            <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Peach%20Collection/96x96-CS-Thumb-Peach-Collection" alt="">
-        </button>
+      <button type="button">
+        <img
+          src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Peach%20Collection/96x96-CS-Thumb-Peach-Collection"
+          alt=""
+        />
+      </button>
 
-        <button type="button">
-            <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Leading%20Ladies/96x96-CS-Thumb-Leading-Ladies" alt="">
-        </button>
+      <button type="button">
+        <img
+          src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Leading%20Ladies/96x96-CS-Thumb-Leading-Ladies"
+          alt=""
+        />
+      </button>
     </div>
 
     <!-- F E A T U R E D -->
@@ -573,30 +628,25 @@
       </div>
       <div class="pikmin">
         <div class="pikmin-image">
-            <img
-              src="assets/characters/Pinkmin.png" width="200" height="200" />
+          <img src="assets/characters/Pinkmin.png" width="200" height="200" />
           <h3>Pikmin™</h3>
         </div>
       </div>
       <div class="animal">
         <div class="animal-image">
-            <img
-              src="assets/characters/Canela.avif" width="200" height="200" />
+          <img src="assets/characters/Canela.avif" width="200" height="200" />
           <h3>Animal Crossing™</h3>
         </div>
       </div>
       <div class="metroid">
         <div class="metroid-image">
-            <img
-              src="assets/characters/Samus.avif" width="200" height="200" />
+          <img src="assets/characters/Samus.avif" width="200" height="200" />
           <h3>Metroid™</h3>
         </div>
       </div>
       <div class="pokémon">
         <div class="pokémon-image">
-            <img
-              src="assets/characters/Pikachu.avif" width="200" height="200" />
-          </button>
+          <img src="assets/characters/Pikachu.avif" width="200" height="200" />
           <h3>Pokémon™</h3>
         </div>
       </div>

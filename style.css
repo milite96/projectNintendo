@@ -26,6 +26,11 @@ header a:hover {
   cursor: pointer;
 }
 
+header li {
+  list-style: none;
+  font-weight: 100;
+}
+
 .navbar-header-top {
   display: flex;
   justify-content: space-between;
@@ -98,17 +103,19 @@ header a:hover {
 }
 
 .navbar-right-links {
+  margin-right: 20px;
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
 
 .navbar-right-links a {
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   gap: 10px;
   color: darkslategray;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .navbar-right-links a:hover {
@@ -133,6 +140,8 @@ header a:hover {
   background-color: transparent;
   display: flex;
   gap: 5px;
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-weight: 600;
 }
 
 .navbar-header-bottom select {
@@ -140,6 +149,7 @@ header a:hover {
   border: none;
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .navbar-header-bottom a {
@@ -148,11 +158,179 @@ header a:hover {
   display: flex;
   gap: 5px;
   font-size: small;
+  letter-spacing: 1px;
 }
 .navbar-header-bottom button i {
   font-size: 18px;
 }
 
+#navbar-mynintendo-store-menu {
+  visibility: hidden;
+}
+
+#navbar-mynintendo-store-menu {
+  position: absolute;
+  top: 94px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar-mynintendo-store-button:hover + #navbar-mynintendo-store-menu {
+  visibility: visible;
+}
+
+.navbar-mynintendo-store-button {
+  width: 180px;
+}
+
+.navbar-games-buttons {
+  width: 115px;
+}
+
+.navbar-ns-buttons {
+  width: 180px;
+}
+
+.navbar-playnint-buttons {
+  width: 180px;
+}
+
+#navbar-mynintendo-store-menu i {
+  color: red;
+}
+
+#navbar-mynintendo-store-ul {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar-mynintendo-store-ul ul {
+  padding-left: 10px;
+  margin: 0;
+}
+#navbar-mynintendo-store-ul li {
+  padding: 5px;
+}
+.navbar-li-title {
+  font-weight: 600;
+}
+
+.navbar-sales{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 5px;
+}
+
+#navbar-shopall-button {
+  margin: 10px;
+  border: 1px solid #e60012;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+#navbar-shopall-button:hover{
+  background-color: #f5c8ccad;
+}
+
+#navbar-shopall-button a{
+  color: #e60012;
+  font-size: large;
+}
+
+#navbar-games-menu {
+  position: absolute;
+  top: 92px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.navbar-games-buttons:hover + #navbar-games-menu{
+  visibility: visible;
+}
+.navbar-games-button-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.navbar-games-button-style button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  padding: 15px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  align-items: center;
+}
+
+.navbar-games-button-style button i{
+  font-size: 45px;
+}
+
+.navbar-games-button-style a{
+  font-weight: 100;
+  text-align: center;
+}
+#navbar-games-button-style-a{
+  margin-top: 16px;
+}
+#navbar-ns-menu{
+  position: absolute;
+  top: 92px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.navbar-ns-buttons:hover + #navbar-ns-menu{
+  visibility: visible;
+}
+
+#navbar-ns-lineup button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  height: 75px;
+}
+#navbar-ns-button-style button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  height: 75px;
+  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar-playnint-menu{
+  position: absolute;
+  top: 92px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.navbar-playnint-buttons:hover + #navbar-playnint-menu{
+  visibility: visible;
+}
 /* B A N N E R */
 
 #slider {
