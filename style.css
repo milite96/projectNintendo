@@ -1,0 +1,1470 @@
+@import url("https://fonts.cdnfonts.com/css/museo-sans-rounded");
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(72, 72, 72);
+  overflow-x: hidden;
+}
+
+/* N A V B A R */
+
+header {
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-weight: 600;
+
+  /* Añadido por Christ */
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+
+header button:hover,
+select:hover,
+header a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+header li {
+  list-style: none;
+  font-weight: 100;
+}
+
+.navbar-header-top {
+  display: flex;
+  justify-content: space-between;
+  max-height: 52px;
+  overflow: hidden;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.navbar-first-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-icon {
+  background-color: rgb(219, 13, 13);
+  display: flex;
+  height: 52px;
+  width: 105px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo-nintendo {
+  height: 27px;
+  width: 80px;
+}
+
+.lower-bar {
+  display: flex;
+  border-bottom: 1px solid #484848;
+  margin: 0;
+  align-items: center;
+  padding: 7px;
+  width: 450px;
+}
+.lower-bar:hover {
+  border-bottom: 1px solid red;
+}
+
+.navbar-search-button {
+  background-color: transparent;
+  border: none;
+}
+
+#navbar-search-icon {
+  color: #484848;
+  font-size: large;
+}
+
+#navbar-search-icon:hover {
+  color: red;
+}
+
+.navbar-search-bar {
+  border: none;
+}
+
+.navbar-dropdown-categories {
+  border: none;
+  font-weight: 600;
+  margin-left: 130px;
+}
+.navbar-dropdown-categories option {
+  color: #484848;
+  font-weight: bold;
+  background-color: rgb(243, 236, 236);
+  border: none;
+}
+
+.navbar-right-links {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.navbar-right-links a {
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  color: darkslategray;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navbar-right-links a:hover {
+  color: red;
+}
+
+.navbar-right-links a i {
+  font-size: 18px;
+}
+
+.navbar-header-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 42px;
+  align-items: center;
+}
+
+.navbar-header-bottom button {
+  color: #484848;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  gap: 5px;
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-weight: 600;
+}
+
+.navbar-header-bottom select {
+  font-family: "Museo Sans Rounded", sans-serif;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-header-bottom a {
+  text-decoration: none;
+  color: #484848;
+  display: flex;
+  gap: 5px;
+  font-size: small;
+  letter-spacing: 1px;
+}
+.navbar-header-bottom button i {
+  font-size: 18px;
+}
+
+#navbar-mynintendo-store-menu {
+  visibility: hidden;
+}
+
+#navbar-mynintendo-store-menu {
+  position: absolute;
+  top: 94px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar-mynintendo-store-button:hover + #navbar-mynintendo-store-menu {
+  visibility: visible;
+}
+
+.navbar-mynintendo-store-button {
+  width: 180px;
+}
+
+.navbar-games-buttons {
+  width: 115px;
+}
+
+.navbar-ns-buttons {
+  width: 180px;
+}
+
+.navbar-playnint-buttons {
+  width: 180px;
+}
+
+#navbar-mynintendo-store-menu i {
+  color: red;
+}
+
+#navbar-mynintendo-store-ul {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar-mynintendo-store-ul ul {
+  padding-left: 10px;
+  margin: 0;
+}
+#navbar-mynintendo-store-ul li {
+  padding: 5px;
+}
+.navbar-li-title {
+  font-weight: 600;
+}
+
+.navbar-sales{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 5px;
+}
+
+#navbar-shopall-button {
+  margin: 10px;
+  border: 1px solid #e60012;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+#navbar-shopall-button:hover{
+  background-color: #f5c8ccad;
+}
+
+#navbar-shopall-button a{
+  color: #e60012;
+  font-size: large;
+}
+
+#navbar-games-menu {
+  position: absolute;
+  top: 92px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.navbar-games-buttons:hover + #navbar-games-menu{
+  visibility: visible;
+}
+.navbar-games-button-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.navbar-games-button-style button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  padding: 15px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  align-items: center;
+}
+
+.navbar-games-button-style button i{
+  font-size: 45px;
+}
+
+.navbar-games-button-style a{
+  font-weight: 100;
+  text-align: center;
+}
+#navbar-games-button-style-a{
+  margin-top: 16px;
+}
+#navbar-ns-menu{
+  position: absolute;
+  top: 92px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.navbar-ns-buttons:hover + #navbar-ns-menu{
+  visibility: visible;
+}
+
+#navbar-ns-lineup button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  height: 75px;
+}
+#navbar-ns-button-style button{
+  border: 1px solid #c7c7c7;
+  border-radius: 15px;
+  height: 75px;
+  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar-playnint-menu{
+  position: absolute;
+  top: 92px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.navbar-playnint-buttons:hover + #navbar-playnint-menu{
+  visibility: visible;
+}
+
+/* B A N N E R */
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  z-index: 80;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.image-banner-slider-container {
+  height: 480px;
+}
+
+.image-banner-slider {
+  scroll-snap-align: center;
+}
+
+.image-banner-slider-container, .image-banner-slider {
+  position: relative;
+}
+
+.image-banner-slider, .image-banner-spotlight-overlay {
+  width: 100vw;
+}
+
+.image-banner-spotlight-overlay, .image-banner-blue-checkered-bg, .image-banner-slider, .second-image-banner, .third-image-banner {
+  height: 100%;
+}
+
+.image-banner-spotlight-overlay {
+  position: absolute;
+  z-index: 10;
+  animation: fadeOut 1s forwards 2.5s;
+}
+
+.image-banner-game-logo {
+  position: absolute;
+  z-index: 9;
+  width: 620px;
+  top: 67px;
+  left: -4px;
+  animation: backInRight 0.5s forwards 2.5s;
+}
+
+.image-banner-blue-checkered-bg {
+  position: absolute;
+  z-index: 8;
+  animation: bounceInLeft 0.3s linear forwards 2.5s;
+}
+
+.curtain-center-container {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 30;
+}
+
+.curtain-center {
+  width: 100vw;
+  height: inherit;
+  animation: slideOutUp 0.8s forwards 1.5s;
+}
+
+.curtain-right-left-container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 29;
+}
+
+.curtain-right, .curtain-left {
+  width: 50%;
+  height: inherit;
+}
+
+.curtain-left {
+  animation: slideOutLeft 0.8s forwards 1.5s;
+}
+
+.curtain-right {
+  animation: slideOutRight 0.8s forwards 1.5s;
+}
+
+.banner-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 45px;
+}
+
+.title-banner {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 24px;
+  color: #484848;
+}
+
+.esrb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.esrb-10 {
+  height: 60px;
+  width: 45px
+}
+
+.esrb-description {
+  font-family: Montserrat;
+  font-size: 11px;
+  margin-left: 15px;
+}
+
+.esrb-et {
+  height: 60px;
+  width: 90px;
+}
+
+.second-image-banner, .third-image-banner {
+  z-index: 31;
+}
+
+.image-banner-slider-peach-collection-overlay {
+  position: absolute;
+  z-index: 32;
+  width: 477px;
+  right: 130px;
+  top: 127px;
+  animation: backInLeft cubic-bezier(.67,-0.06,.55,.95) 1.3s forwards;
+}
+
+.image-banner-slider-third-banner-title {
+  position: absolute;
+  z-index: 32;
+  width: 535px;
+  top: 35px;
+  right: 500px;
+  animation: backInUp 1.3s cubic-bezier(.67,-0.06,.55,.95) forwards;
+}
+
+.banner-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.banner-nav-button {
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.banner-nav-button a:hover {
+  pointer-events: none;
+}
+
+.banner-nav-button-img {
+  width: 47.6px;
+  height: 47.6px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Animaciones */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes backInRight {
+  0% {
+    transform: translateX(250px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateX(4px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes backInUp {
+  0% {
+    transform: translateY(10px);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(-2px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bounceInLeft {
+
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/* F E A T U R E D */
+
+.featured {
+  height: 397px;
+  width: 100%;
+  padding: 48px 0px;
+  margin-left: 30px; /* provisional */
+}
+
+.card-layout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3000px;
+  height: 360px;
+  gap: 40px;
+}
+
+.card-noLinks {
+  text-decoration: none;
+  color: black;
+}
+
+.card-noLinks:hover .card-image-container {
+  position: relative;
+  /* top: -20px; */
+  transform: translateY(-20px);
+}
+
+.card-card {
+  width: 260px;
+  height: 311px;
+  border: 1px solid rgb(196, 196, 196); /* provisional */
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.card-image-container {
+  width: 260px;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: all ease-in-out 400ms;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content-1 {
+  display: flex;
+  height: 149px;
+  padding-top: 16px;
+  line-height: 1.4;
+  /* transition: transform 0.3 ease; */
+}
+
+.card-content-2 {
+  padding: 0px 16px;
+}
+
+.card-h3-container {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.card-h3-container h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  height: 45px; /* se le da la altura que tiene en la web de nintendo */
+  /* letter-spacing: 0px; */
+}
+
+.card-h3-container h3:hover {
+  color: #e60012;
+}
+
+.card-tag-blue {
+  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  height: 19px;
+  padding: 0px 8px;
+  background-color: #4b5cce;
+  border-radius: 1rem;
+  color: white;
+}
+
+.card-tag-red {
+  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  height: 19px;
+  padding: 0px 8px;
+  background-color: rgb(230, 0, 18);
+  border-radius: 1rem;
+  color: white;
+}
+
+.card-tag-purple {
+  display: inline-flex; /* se usa porque quiero que el width sea igual a lo que escriba dentro */
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  height: 19px;
+  padding: 0px 8px;
+  background-color: #9531b9;
+  border-radius: 1rem;
+  color: white;
+}
+.card-spacing {
+  display: flex;
+  width: 8px;
+  height: 8px;
+}
+
+.card-footer-grid-container {
+  display: grid;
+  width: 228px;
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+.card-footer-flex-container {
+  display: flex;
+  align-items: center;
+  width: 188px;
+  height: 24px;
+}
+
+.card-red-stick {
+  display: flex;
+  width: 2px;
+  height: 16px;
+  background-color: #e60012;
+  margin-right: 6px;
+}
+
+.card-console {
+  display: flex;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+
+/* O N L I N E  S T O R E */
+
+.onlineStore {
+  height: 378px;
+  width: 100%;
+  padding: 48px 0px;
+}
+
+.onlineStore-margin {
+  margin: 0 246px;
+}
+
+.onlineStore-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.onlineStore-banner {
+  border-radius: 15px;
+}
+
+.onlineStore-container {
+  display: flex;
+  width: 800px;
+  margin-top: 20px;
+}
+
+.onlineStore-text {
+  width: 650px;
+  font-weight: 600;
+}
+
+.onlineStore-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+/* .onlineStore-btn-container:hover .onlineStore-btn {
+  background-color: rgb(114, 21, 21); */
+/* } */
+
+.onlineStore-btn {
+  display: inline-flex;
+  height: 38px;
+  width: 130px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background-color: rgb(230, 0, 18);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.onlineStore-btn-container:hover .onlineStore-btn {
+  animation: bounce-in 0.7s;
+  background-color: rgb(172, 0, 13);
+}
+@keyframes bounce-in {
+  30% {
+    transform: scale(1.03);
+  }
+  50% {
+    transform: scale(0.97);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.no-links {
+  text-decoration: none;
+  color: white;
+}
+
+/* N E W S */
+
+.News-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-card-container {
+  width: 550px;
+  height: 550px;
+}
+
+.second-card-container {
+  width: 550px;
+  height: 550px;
+}
+
+.third-card-container {
+  width: 262px;
+  height: 321px;
+}
+
+.fourth-card-container {
+  width: 262px;
+  height: 321px;
+}
+
+.fifth-card-container {
+  width: 262px;
+  height: 321px;
+}
+
+.six-card-container {
+  width: 262px;
+  height: 321px;
+}
+
+/* C H A R A C T E R S */
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 50px;
+}
+.mario-image {
+  background-image: url("assets/characters/mario-bg.jpeg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+.zelda-image {
+  background-image: url("assets/characters/zelda-bg.jpeg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+.splatoon-image {
+  background-image: url("assets/characters/splatoon-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+.kirby-image {
+  background-image: url("assets/characters/kirby-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+.pikmin-image {
+  background-image: url("assets/characters/pikmin-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+.animal-image {
+  background-image: url("assets/characters/animal-bg.jpeg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+.metroid-image {
+  background-image: url("assets/characters/metroid-bg.jpeg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+.pokémon-image {
+  background-image: url("assets/characters/pokemon-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+
+/* D I G I T A L   B E S T   S E L L E R S */
+.digital {
+  padding: 48px 0px;
+}
+
+.digital-margin {
+  margin: 0px 30px; /*en la pagina pone auto, pero no me salen margenes si lo pongo igual*/
+}
+
+.best-sellers {
+  margin-bottom: 32px;
+}
+
+.bs-container {
+  display: flex;
+  align-items: center;
+}
+
+.bs-container h1 {
+  margin: 0 6px 0 0;
+  padding-right: 16px;
+  border-right: 0.8px solid gray;
+}
+
+.bs-container a {
+  color: #e60012;
+  font-weight: 600;
+}
+
+.bs-container a:hover {
+  color: rgb(172, 0, 13);
+}
+
+.square-16x16 {
+  display: flex;
+  height: 16px;
+  width: 16px;
+}
+
+.bs-layout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3000px;
+  height: 365px;
+  gap: 40px;
+}
+
+.bs-noLinks {
+  text-decoration: none;
+  color: black;
+  height: 311px;
+}
+
+.bs-noLinks:hover .bs-image-container {
+  position: relative;
+  /* top: -20px; */
+  transform: translateY(-20px);
+}
+
+.bs-card {
+  width: 260px;
+  height: 311px;
+  border: 1px solid rgb(196, 196, 196); /* provisional */
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.bs-image-container {
+  width: 260px;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: all ease-in-out 400ms;
+}
+
+.bs-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.bs-content-1 {
+  display: flex;
+  height: 149px;
+  padding-top: 16px;
+  line-height: 1.4;
+  /* transition: transform 0.3 ease; */
+}
+
+.bs-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.bs-h3-container {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.bs-h3-container h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  height: auto; /* se le da la altura que tiene en la web de nintendo */
+  /* letter-spacing: 0px; */
+}
+.bs-h3-container h3:hover {
+  color: #e60012;
+}
+
+.TM {
+  font-size: 12px;
+}
+
+.bs-date {
+  font-size: 0.75rem;
+  font-weight: 200;
+  margin-top: 0.25rem;
+}
+
+.bs-price {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.bs-spacing {
+  display: flex;
+  width: 8px;
+  height: 8px;
+}
+
+.bs-footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2.5rem;
+  width: 228px;
+  height: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.bs-footer-flex-container {
+  display: flex;
+  align-items: center;
+  width: 188px;
+  height: 24px;
+}
+
+.bs-red-stick {
+  display: flex;
+  width: 2px;
+  height: 16px;
+  background-color: #e60012;
+  margin-right: 6px;
+}
+
+.bs-console {
+  display: flex;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+
+.bs-heart-filled {
+  opacity: 0;
+}
+
+.bs-sparks {
+  opacity: 0;
+}
+
+.bs-heart-button {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  border: medium;
+  background: none;
+  cursor: pointer;
+  color: rgb(230, 0, 18);
+  font-size: 1em;
+  line-height: 1;
+}
+
+.bs-heart-button:visited .bs-heart-filled {
+  opacity: 1;
+}
+.bs-heart-button:hover {
+  color: rgb(172, 0, 13);
+}
+
+.bs-heart-button svg {
+  display: block;
+  width: 3em;
+  height: 3em;
+  flex: 0 0 auto;
+  margin: -0.75em;
+}
+
+.bs-heart-button:hover .bs-sparks {
+  opacity: 1;
+  color: rgb(172, 0, 13);
+  transition: 1000ms;
+  stroke-dasharray: 8px;
+  stroke-dashoffset: 24px;
+}
+
+.bs-red-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 311px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #e60012;
+  color: white;
+  cursor: pointer;
+}
+
+.bs-red-button:hover {
+  background-color: rgb(172, 0, 13);
+  height: calc(311px - 2px);
+  width: calc(145px - 2px);
+}
+
+/* D I G I T A L  N E W  R E L E A S E S */
+
+.nr-container {
+  display: flex;
+  align-items: center;
+}
+
+.nr-container h1 {
+  margin: 0 6px 0 0;
+  padding-right: 16px;
+  border-right: 0.8px solid gray;
+}
+
+.nr-container a {
+  color: #e60012;
+  font-weight: 600;
+}
+
+.nr-container a:hover {
+  color: rgb(172, 0, 13);
+}
+
+.nr-layout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3000px;
+  height: 365px;
+  gap: 40px;
+}
+
+.nr-noLinks {
+  text-decoration: none;
+  color: black;
+  height: 311px;
+}
+
+.nr-noLinks:hover .nr-image-container {
+  position: relative;
+  /* top: -20px; */
+  transform: translateY(-20px);
+}
+
+.nr-card {
+  width: 260px;
+  height: 311px;
+  border: 1px solid rgb(196, 196, 196); /* provisional */
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.nr-image-container {
+  width: 260px;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: all ease-in-out 400ms;
+}
+
+.nr-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.nr-content-1 {
+  display: flex;
+  height: 149px;
+  padding-top: 16px;
+  line-height: 1.4;
+  /* transition: transform 0.3 ease; */
+}
+
+.nr-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.nr-h3-container {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.nr-h3-container h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  height: auto; /* se le da la altura que tiene en la web de nintendo */
+  /* letter-spacing: 0px; */
+}
+.nr-h3-container h3:hover {
+  color: #e60012;
+}
+
+.nr-date {
+  font-size: 0.75rem;
+  font-weight: 200;
+  margin-top: 0.25rem;
+}
+
+.nr-tag-red{
+  font-size: 0.75rem;
+  width: fit-content;
+  height: 19px;
+  padding: 0px 8px;
+  margin-bottom: 8px;
+  background-color: rgb(230, 0, 18);
+  border-radius: 1rem;
+  color: white;
+}
+
+.nr-price-container{
+  display: flex;
+  align-items: center;
+}
+  
+.nr-price {
+  margin-bottom: 8px;
+}
+
+.nr-del{
+  font-weight: 100;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.nr-sale{
+  align-self: center;
+  background-color: #e60012;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px;
+  margin-left:10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: fit-content;
+}
+
+.nr-spacing {
+  display: flex;
+  width: 8px;
+  height: 8px;
+}
+
+.nr-footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2.5rem;
+  width: 228px;
+  height: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.nr-footer-flex-container {
+  display: flex;
+  align-items: center;
+  width: 188px;
+  height: 24px;
+}
+
+.nr-red-stick {
+  display: flex;
+  width: 2px;
+  height: 16px;
+  background-color: #e60012;
+  margin-right: 6px;
+}
+
+.nr-console {
+  display: flex;
+  font-weight: 100;
+  font-size: 0.875rem;
+}
+
+.nr-heart-filled {
+  opacity: 0;
+}
+
+.nr-sparks {
+  opacity: 0;
+}
+
+.nr-heart-button {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  border: medium;
+  background: none;
+  cursor: pointer;
+  color: rgb(230, 0, 18);
+  font-size: 1em;
+  line-height: 1;
+}
+
+.nr-heart-button:visited .nr-heart-filled {
+  opacity: 1;
+}
+.nr-heart-button:hover {
+  color: rgb(172, 0, 13);
+}
+
+.nr-heart-button svg {
+  display: block;
+  width: 3em;
+  height: 3em;
+  flex: 0 0 auto;
+  margin: -0.75em;
+}
+
+.nr-heart-button:hover .nr-sparks {
+  opacity: 1;
+  color: rgb(172, 0, 13);
+  transition: 1000ms;
+  stroke-dasharray: 8px;
+  stroke-dashoffset: 24px;
+}
+
+.nr-red-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 311px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #e60012;
+  color: white;
+  cursor: pointer;
+}
+
+.nr-red-button:hover {
+  background-color: rgb(172, 0, 13);
+  height: calc(311px - 2px);
+  width: calc(145px - 2px);
+}
+
+
+/* F O O T E R */
+
+.footer-nintendo-baner {
+  background-color: rgb(230, 0, 18);
+  padding: 2.25rem 1rem;
+  color: rgb(255, 255, 255);
+  display: grid;
+  justify-items: end;
+  grid-template-columns: auto repeat(1, 1fr);
+  align-items: center;
+}
+.footer-nintendo-jpg {
+  justify-self: start;
+}
+.footer-social-logos {
+  display: grid;
+  grid-template-columns: auto repeat(4, 58px);
+
+  justify-items: end;
+  width: 100%;
+}
+
+.footer-linkbar {
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-about {
+  border-left: 1px solid black;
+  width: 200px;
+  height: 200px;
+  padding-left: 1.5rem;
+}
+footer h1 {
+  color: rgb(68, 68, 68);
+}
+footer a {
+  color: red;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(131, 28, 28);
+  text-decoration: underline;
+}
+footer ul {
+  padding: 0px;
+  margin: 0px;
+}
+footer li {
+  list-style: none;
+}
+.footer-shop {
+  border-left: 1px solid black;
+
+  padding-left: 1.5rem;
+}
