@@ -396,7 +396,7 @@ header a:hover {
   padding-bottom: 50px;
 }
 .characters-link img:hover{
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: all 200ms;
 }
 .mario-image {
