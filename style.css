@@ -616,27 +616,43 @@ header li {
 /* F E A T U R E D */
 
 .featured {
-  height: 397px;
+  height: auto;
   width: 100%;
   padding: 48px 0px;
   margin-left: 30px; /* provisional */
 }
 
+.featured h1 {
+  font-size: 1.75rem;
+}
+
 .card-layout {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  width: 3000px;
-  height: 360px;
+  flex-wrap:wrap;
+  width: auto;
+  height: auto;
   gap: 40px;
 }
 
 .card-noLinks {
   text-decoration: none;
   color: black;
+  
+}
+
+.card-image-container {
+  width: 100%;
+  height: 146px;
+  border: 1px solid rgb(218, 218, 218);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: transform ease-in-out 400ms;
 }
 
 .card-noLinks:hover .card-image-container {
+  border: 1px solid rgb(218, 218, 218);
   position: relative;
   /* top: -20px; */
   transform: translateY(-20px);
@@ -645,20 +661,13 @@ header li {
 .card-card {
   width: 260px;
   height: 311px;
-  border: 1px solid rgb(196, 196, 196); /* provisional */
+  border: 1px solid rgb(218, 218, 218); /* provisional */
   border-radius: 15px;
   font-weight: 700;
   font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.card-image-container {
-  width: 260px;
-  height: 146px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  overflow: hidden;
-  transition: all ease-in-out 400ms;
-}
+
 
 .card-image-container img {
   width: 100%;
@@ -1005,7 +1014,7 @@ header li {
 }
 
 /* D I G I T A L   B E S T   S E L L E R S */
-.digital {
+.digital-best-sellers {
   padding: 48px 0px;
 }
 
@@ -1023,9 +1032,10 @@ header li {
 }
 
 .bs-container h1 {
+  font-size: 1.75rem;
   margin: 0 6px 0 0;
   padding-right: 16px;
-  border-right: 0.8px solid gray;
+  border-right: 0.8px solid rgb(218, 218, 218)
 }
 
 .bs-container a {
@@ -1058,23 +1068,34 @@ header li {
   height: 311px;
 }
 
+.bs-image-container {
+  width: 100%;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid rgb(218, 218, 218);
+  overflow: hidden;
+  transition: transform ease-in-out 400ms;
+}
+
 .bs-noLinks:hover .bs-image-container {
   position: relative;
   /* top: -20px; */
   transform: translateY(-20px);
+  border: 1px solid rgb(218, 218, 218);
 }
 
 .bs-card {
   width: 260px;
   height: 311px;
-  border: 1px solid rgb(196, 196, 196); /* provisional */
+  border: 1px solid rgb(218, 218, 218); /* provisional */
   border-radius: 15px;
   font-weight: 700;
   font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .bs-image-container {
-  width: 260px;
+  width: 100%;
   height: 146px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -1227,12 +1248,19 @@ header li {
 }
 
 .bs-red-button:hover {
+  animation: bounce-in 0.7s;
   background-color: rgb(172, 0, 13);
-  height: calc(311px - 2px);
-  width: calc(145px - 2px);
 }
 
 /* D I G I T A L  N E W  R E L E A S E S */
+
+.digital-new-releases {
+  padding: 48px 0px;
+}
+
+.new-releases {
+  margin-bottom: 32px;
+}
 
 .nr-container {
   display: flex;
@@ -1242,7 +1270,8 @@ header li {
 .nr-container h1 {
   margin: 0 6px 0 0;
   padding-right: 16px;
-  border-right: 0.8px solid gray;
+  border-right: 0.8px solid rgb(218, 218, 218);
+  font-size: 1.75rem;
 }
 
 .nr-container a {
@@ -1258,34 +1287,54 @@ header li {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 3000px;
-  height: 365px;
+  width: 100%;
+  height: 100%;
   gap: 40px;
 }
 
 .nr-noLinks {
   text-decoration: none;
   color: black;
-  height: 311px;
+  height: 340px;
+}
+
+.nr-image-container {
+  width:100%;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid rgb(218, 218, 218);
+  overflow: hidden;
+  transition: transform ease-in-out 400ms;
 }
 
 .nr-noLinks:hover .nr-image-container {
   position: relative;
   /* top: -20px; */
   transform: translateY(-20px);
+  border: 1px solid rgb(218, 218, 218);
 }
 
-.nr-card {
+.nr-card-tags {
   width: 260px;
-  height: 311px;
-  border: 1px solid rgb(196, 196, 196); /* provisional */
+  height: 340px;
+  border: 1px solid rgb(218, 218, 218); /* provisional */
   border-radius: 15px;
   font-weight: 700;
   font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.nr-image-container {
+.nr-card {
   width: 260px;
+  height: 311px;
+  border: 1px solid rgb(218, 218, 218); /* provisional */
+  border-radius: 15px;
+  font-weight: 700;
+  font-family: "museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+} 
+
+.nr-image-container {
+  width:100%;
   height: 146px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -1298,12 +1347,18 @@ header li {
   height: 100%;
 }
 
+.nr-content-1-tag {
+  display: flex;
+  height: 180px;
+  padding-top: 16px;
+  
+}
+
 .nr-content-1 {
   display: flex;
   height: 149px;
   padding-top: 16px;
   line-height: 1.4;
-  /* transition: transform 0.3 ease; */
 }
 
 .nr-content-2 {
@@ -1315,17 +1370,17 @@ header li {
 
 .nr-h3-container {
   width: 100%;
-  height: 64px;
+  height: 68px;
   margin-bottom: 16px;
+ 
 }
 
 .nr-h3-container h3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  height: auto; /* se le da la altura que tiene en la web de nintendo */
-  /* letter-spacing: 0px; */
 }
+
 .nr-h3-container h3:hover {
   color: #e60012;
 }
@@ -1343,6 +1398,17 @@ header li {
   padding: 0px 8px;
   margin-bottom: 8px;
   background-color: rgb(230, 0, 18);
+  border-radius: 1rem;
+  color: white;
+}
+
+.nr-tag-blue {
+  font-size: 0.75rem;
+  width: fit-content;
+  height: 19px;
+  padding: 0px 8px;
+  margin-bottom: 8px;
+  background-color: #4b5cce;
   border-radius: 1rem;
   color: white;
 }
@@ -1468,9 +1534,10 @@ header li {
 
 .nr-red-button:hover {
   background-color: rgb(172, 0, 13);
-  height: calc(311px - 2px);
-  width: calc(145px - 2px);
+  animation: bounce-in 0.7s;
 }
+
+
 
 
 /* F O O T E R */
