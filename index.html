@@ -34,7 +34,7 @@
     <!-- H E A D E R -->
 
     <header>
-      <nav>
+      <nav class="nav-fullscreen">
         <div class="navbar-header-top">
           <div class="navbar-first-group">
             <span class="navbar-icon">
@@ -257,6 +257,19 @@
           </div>
         </div>
       </nav>
+      <nav class="nav-smaller">
+        <div class="nav-small-top">
+          <img
+            src="assets/nintendo.png"
+            alt="nintendo icon"
+            class="navbar-smallicon"
+          />
+          <a href="#" class="navbar-link-regionselect">
+            <i class="fa-solid fa-flag"></i
+          ></a>
+        </div>
+      </nav>
+      
     </header>
 
     <!-- B A N N E R -->
@@ -1477,7 +1490,7 @@
         <div class="footer-grid">
           <div class="footer-linkgrid">
             <div class="footer-about">
-              <h2>About Nintendo</h1>
+              <h2>About Nintendo</h2>
               <ul>
                 <li>
                   <a href="#"><b>Careers</b></a>
@@ -1570,12 +1583,32 @@
             <p>
               <span>© Nintendo. </span>
               <span>Games are property of their respective owners. </span>
-              <span>Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</span>
+              <span
+                >Nintendo of America Inc. Headquarters are in Redmond,
+                Washington, USA</span
+              >
             </p>
           </div>
         </div>
       </div>
     </footer>
+    <nav class="nav-small-bar">
+      <button class="nav-burguer-icon"><i class="fa-solid fa-bars"></i></button>
+      <a href="#">
+        <i class="fa-solid fa-heart"></i>
+      </a>
+      <button class="nav-search-icon">
+        <i
+            class="fa-solid fa-magnifying-glass"
+            id="navbar-search-icon-small"
+          ></i>
+      </button>
+      <a href="#">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-user"></i>
+      </a>
+  </nav>
   </body>
 </html>
-

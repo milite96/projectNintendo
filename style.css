@@ -98,6 +98,7 @@ header li {
   border: none;
   font-weight: 600;
   margin-left: 130px;
+  outline: none;
 }
 .navbar-dropdown-categories option {
   color: #484848;
@@ -383,6 +384,43 @@ header li {
 .navbar-playnint-button-style a{
   font-weight: 100;
   text-align: center;
+}
+
+.nav-smaller{
+  display: none;
+}
+.nav-small-bar{
+  visibility: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 5px 15px #484848;
+  border-radius: 25px;
+  position: sticky;
+  top: 10px;
+  bottom: 10px;
+  background: white;
+  margin: 5px;
+}
+
+.nav-burguer-icon{
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+}
+.nav-small-bar a{
+  color: black;
+  font-size: 20px;
+}
+
+.nav-search-icon{
+  border: none;
+  background-color: #e60012;
+  color: white;
+  font-size: 22px;
+  border-radius: 30px;
+  padding: 10px;
 }
 
 /* B A N N E R */
@@ -1631,4 +1669,81 @@ footer li {
   padding-left: 1.5rem;
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
+}
+
+@media (max-width: 768px){
+  .nav-fullscreen{
+    visibility: hidden;
+  }
+  .nav-smaller{
+    visibility: visible;
+    background-color: #e60012;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-smaller div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+  }
+  .navbar-smallicon{
+    height: 30x;
+    width: 115px; 
+  }
+  .nav-smaller div a i{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .nav-small-bottom{
+    position: sticky;
+    bottom: 10px;
+  }
+
+  .nav-small-bar{
+    visibility: visible;
+  }
+}
+
+@media (max-width: 378px){
+  .nav-fullscreen{
+    display: none;
+  }
+  .nav-smaller{
+    visibility: visible;
+    background-color: #e60012;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-smaller div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+  }
+  .navbar-smallicon{
+    height: 30x;
+    width: 115px; 
+  }
+  .nav-smaller div a i{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .nav-small-bottom{
+    position: sticky;
+    bottom: 10px;
+  }
+  .nav-small-bar{
+    visibility: visible;
+  }
 }
