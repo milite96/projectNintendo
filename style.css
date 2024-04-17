@@ -1478,7 +1478,15 @@ header li {
 }
 
 .nr-heart-filled {
+  transition: opacity 0.3s ease;
   opacity: 0;
+}
+
+#heart-checkbox-1:checked + svg .nr-heart-filled, 
+#heart-checkbox-2:checked + svg .nr-heart-filled,
+#heart-checkbox-3:checked + svg .nr-heart-filled,
+#heart-checkbox-4:checked + svg .nr-heart-filled {
+  opacity: 1;
 }
 
 .nr-sparks {
@@ -1497,9 +1505,6 @@ header li {
   line-height: 1;
 }
 
-.nr-heart-button:visited .nr-heart-filled {
-  opacity: 1;
-}
 .nr-heart-button:hover {
   color: rgb(172, 0, 13);
 }
