@@ -1545,7 +1545,7 @@ footer li {
 }
 .footer-shop {
   border-left: 1px solid rgb(218, 218, 218);
-  
+  grid-row: span 2;
   padding-left: 1.5rem;
  
 }
@@ -1564,7 +1564,7 @@ footer li {
 .footer-parents {
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
-  
+  grid-row: span 2;
 }
 .footer-privacybox {
   border-left: 1px solid rgb(218, 218, 218);
@@ -1602,7 +1602,7 @@ footer li {
 }
 .footer-legalinfo  {
   background-color: rgb(36, 36, 36);
-  padding: 2rem 1rem 114px;
+  padding: 2rem 1rem;
   color: rgb(255, 255, 255);
   text-align: center;
 }
