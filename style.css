@@ -883,16 +883,10 @@ header li {
 
 /* C H A R A C T E R S */
 
-
-/*  .parent:hover .child,
-.parent:focus .child {
-  transform: scale(1.2);
-}*/
-
-/* .characters{
-  margin-left: 350px;
-  margin-right: 350px;
-} */
+.characters{
+  margin-left: 18.5vw;
+  margin-right: 18.5vw;
+}
 .characters-title{
   font-size: 29px;
 }
@@ -901,114 +895,328 @@ header li {
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 50px;
 }
-.characters-link img:hover{
-    transform: scale(1.15);
-    transition: all 200ms;
-}
-.mario-image {
-  background-image: url("assets/characters/mario-bg.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 10px;
+.mario-image{
+  position: relative;
   width: 280px;
-  height: 280px;
+  height: 280px; 
   overflow: hidden;
-}
-.mario-image img{
-  width: 280px;
-  height: 280px;
-}
-.zelda-image {
-  background-image: url("assets/characters/zelda-bg.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+}
+.mario-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
 }
-.zelda-image img{
+.mario-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.mario-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.mario-image:hover .mario-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.mario-image:hover .mario-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.zelda-image{
+  position: relative;
   width: 280px;
-  height: 280px;
-}
-.splatoon-image {
-  background-image: url("assets/characters/splatoon-bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 280px; 
+  overflow: hidden;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+}
+.zelda-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
 }
-.splatoon-image img{
+.zelda-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.zelda-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.zelda-image:hover .zelda-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.zelda-image:hover .zelda-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+.splatoon-image{
+  position: relative;
   width: 280px;
-  height: 280px;
-}
-.kirby-image {
-  background-image: url("assets/characters/kirby-bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 280px; 
+  overflow: hidden;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+}
+.splatoon-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
 }
-.kirby-image img{
+.splatoon-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.splatoon-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.splatoon-image:hover .splatoon-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.splatoon-image:hover .splatoon-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+.kirby-image{
+  position: relative;
   width: 280px;
-  height: 280px;
-}
-.pikmin-image {
-  background-image: url("assets/characters/pikmin-bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 280px; 
+  overflow: hidden;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+}
+.kirby-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
 }
-.pikmin-image img{
+.kirby-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.kirby-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.kirby-image:hover .kirby-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.kirby-image:hover .kirby-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+.pikmin-image{
+  position: relative;
   width: 280px;
-  height: 280px;
-}
-.animal-image {
-  background-image: url("assets/characters/animal-bg.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 280px; 
+  overflow: hidden;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+}
+.pikmin-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
 }
-.animal-image img{
+.pikmin-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.pikmin-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.pikmin-image:hover .pikmin-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.pikmin-image:hover .pikmin-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+.animal-image{
+  position: relative;
   width: 280px;
-  height: 280px;
-}
-.metroid-image {
-  background-image: url("assets/characters/metroid-bg.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 280px; 
+  overflow: hidden;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+}
+.animal-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
 }
-.metroid-image img{
+.animal-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.animal-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.animal-image:hover .animal-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.animal-image:hover .animal-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+.metroid-image{
+  position: relative;
   width: 280px;
-  height: 280px;
-}
-.pokémon-image {
-  background-image: url("assets/characters/pokemon-bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 280px; 
+  overflow: hidden;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+}
+.metroid-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
 }
-.pokémon-image img{
+.metroid-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.metroid-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.metroid-image:hover .metroid-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.metroid-image:hover .metroid-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+.pokémon-image{
+  position: relative;
   width: 280px;
-  height: 280px;
+  height: 280px; 
+  overflow: hidden;
+  border-radius: 10px;
 }
+.pokémon-bg{
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 330px;
+  overflow: hidden;
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.pokémon-bg img {
+  display: block;
+  width: 330px;
+  object-fit: cover;
+}
+.pokémon-ch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) translateZ(0); 
+  width: 100%¡;
+  height: 100%;
+  max-width: 100%; 
+  max-height: 100%; 
+  transition: transform 0.5s ease;
+}
+.pokémon-image:hover .pokémon-bg {
+  transform: scale(0.90);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
+.pokémon-image:hover .pokémon-ch{
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
 
 /* D I G I T A L   B E S T   S E L L E R S */
 .digital {
@@ -1588,4 +1796,19 @@ footer li {
   padding-left: 1.5rem;
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .protagonists{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .protagonists{
+      grid-template-columns: repeat(1, 1fr);
+  }
 }
