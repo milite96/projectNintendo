@@ -1234,6 +1234,7 @@ header li {
   stroke-dashoffset: 24px;
 }
 
+
 .bs-red-button {
   display: flex;
   align-items: center;
@@ -1657,3 +1658,16 @@ footer li {
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
 }
+
+
+/* @media (max-width: 768px) {
+  .protagonists{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .protagonists{
+      grid-template-columns: repeat(1, 1fr);
+  }
+} */
