@@ -1193,6 +1193,7 @@ header li {
 
 .bs-heart-filled {
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .bs-sparks {
@@ -1234,6 +1235,12 @@ header li {
   stroke-dashoffset: 24px;
 }
 
+#bs-heart-checkbox-1:checked + svg .bs-heart-filled, 
+#bs-heart-checkbox-2:checked + svg .bs-heart-filled,
+#bs-heart-checkbox-3:checked + svg .bs-heart-filled,
+#bs-heart-checkbox-4:checked + svg .bs-heart-filled {
+  opacity: 1;
+}
 
 .bs-red-button {
   display: flex;
@@ -1483,10 +1490,10 @@ header li {
   opacity: 0;
 }
 
-#heart-checkbox-1:checked + svg .nr-heart-filled, 
-#heart-checkbox-2:checked + svg .nr-heart-filled,
-#heart-checkbox-3:checked + svg .nr-heart-filled,
-#heart-checkbox-4:checked + svg .nr-heart-filled {
+#nr-heart-checkbox-1:checked + svg .nr-heart-filled, 
+#nr-heart-checkbox-2:checked + svg .nr-heart-filled,
+#nr-heart-checkbox-3:checked + svg .nr-heart-filled,
+#nr-heart-checkbox-4:checked + svg .nr-heart-filled {
   opacity: 1;
 }
 
