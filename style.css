@@ -1710,7 +1710,7 @@ footer li {
   }
 }
 
-@media (max-width: 378px){
+@media (max-width: 429px){
   .nav-fullscreen{
     display: none;
   }
