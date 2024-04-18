@@ -533,7 +533,8 @@ header li {
   .first-image-banner, .image-banner-blue-checkered-bg-container,
   .curtain-center-container, .curtain-right-left-container, 
   .image-banner-spotlight-overlay-container,
-  .second-image-banner, .third-card-container {
+  .second-image-banner, .third-image-banner,
+  .banner-info, .image-banner-slider {
     display: none;
     width: 0;
   }
@@ -545,17 +546,20 @@ header li {
   
   .image-banner-slider-v2 {
     visibility: visible;
+    object-fit: cover;
     width: 100%;
   }
 
   .image-banner-game-logo-container {
-    position: absolute;
     height: 100%;
-    top: 0;
+    width: 100%;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
   }
 
   .image-banner-game-logo {
-    width: 100%;
+    width: 100px;
   }
 }
 
