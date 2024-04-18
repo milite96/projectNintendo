@@ -341,52 +341,67 @@ header li {
 .slider {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  position: relative;
-  z-index: 80;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  z-index: 80;
+}
+
+.banner-slider img {
+  display: block;
 }
 
 .image-banner-slider-container {
-  height: 480px;
+  position: relative;
+  width: 100svw;
 }
 
 .image-banner-slider {
-  scroll-snap-align: center;
+  width: 100%;
+  object-fit: cover;
 }
 
-.image-banner-slider-container, .image-banner-slider {
-  position: relative;
+.image-banner-slider-v2 {
+  visibility: hidden;
+  width: 0;
 }
 
-.image-banner-slider, .image-banner-spotlight-overlay {
+.image-banner-spotlight-overlay-container {
   width: 100vw;
-}
-
-.image-banner-spotlight-overlay, .image-banner-blue-checkered-bg, .image-banner-slider, .second-image-banner, .third-image-banner {
-  height: 100%;
+  position: absolute;
+  z-index: 10;
 }
 
 .image-banner-spotlight-overlay {
-  position: absolute;
-  z-index: 10;
+  width: 100%;
   animation: fadeOut 1s forwards 2.5s;
 }
 
-.image-banner-game-logo {
+.image-banner-game-logo-container {
+  width: 40svw;
+  height: 100%;
   position: absolute;
+  top: 8svh;
+  left: -0.26vw;
   z-index: 9;
-  width: 620px;
-  top: 67px;
-  left: -4px;
+}
+
+.image-banner-game-logo {
+  width: 100%;
   animation: backInRight 0.5s forwards 2.5s;
 }
 
-.image-banner-blue-checkered-bg {
+.image-banner-blue-checkered-bg-container {
   position: absolute;
   z-index: 8;
-  animation: bounceInLeft 0.3s linear forwards 2.5s;
+  width: 40svw;
+  height: 100%;
+}
+
+.image-banner-blue-checkered-bg {
+  width: 100%;
+  max-height: 100%;
+  animation: bounceInLeft 0.25s linear forwards 2.5s;
 }
 
 .curtain-center-container {
@@ -404,7 +419,6 @@ header li {
 
 .curtain-right-left-container {
   width: 100vw;
-  height: 100%;
   display: flex;
   position: absolute;
   top: 0;
@@ -413,7 +427,6 @@ header li {
 
 .curtain-right, .curtain-left {
   width: 50%;
-  height: inherit;
 }
 
 .curtain-left {
@@ -432,9 +445,8 @@ header li {
 }
 
 .title-banner {
-  font-family: Montserrat;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.56vw;
   color: #484848;
 }
 
@@ -450,7 +462,6 @@ header li {
 }
 
 .esrb-description {
-  font-family: Montserrat;
   font-size: 11px;
   margin-left: 15px;
 }
@@ -461,31 +472,40 @@ header li {
 }
 
 .second-image-banner, .third-image-banner {
-  z-index: 31;
+  position: inherit;
+  z-index: 32;
 }
 
-.image-banner-slider-peach-collection-overlay {
+.second-image-banner-overlay-container {
+  width: 30.90svw;
   position: absolute;
+  top: 16.15svh;
+  right: 8.46svw;
   z-index: 32;
-  width: 477px;
-  right: 130px;
-  top: 127px;
+}
+
+.second-image-banner-overlay {
+  width: 100%;
   animation: backInLeft cubic-bezier(.67,-0.06,.55,.95) 1.3s forwards;
 }
 
-.image-banner-slider-third-banner-title {
-  position: absolute;
+.third-image-banner-overlay-container {
   z-index: 32;
-  width: 535px;
-  top: 35px;
-  right: 500px;
+  width: 34.83svw;
+  position: absolute;
+  top: 4.5svh;
+  right: 32.55svw;
+}
+
+.third-image-banner-overlay {
+  width: 100%;
   animation: backInUp 1.3s cubic-bezier(.67,-0.06,.55,.95) forwards;
 }
 
 .banner-nav {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.65vw;
 }
 
 .banner-nav-button {
@@ -506,6 +526,37 @@ header li {
   height: 47.6px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+
+@media all and (max-width: 1025px) {
+  .first-image-banner, .image-banner-blue-checkered-bg-container,
+  .curtain-center-container, .curtain-right-left-container, 
+  .image-banner-spotlight-overlay-container,
+  .second-image-banner, .third-card-container {
+    display: none;
+    width: 0;
+  }
+
+  .image-banner-slider-container {
+    position: relative;
+    width: 100svw;
+  }
+  
+  .image-banner-slider-v2 {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .image-banner-game-logo-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+  }
+
+  .image-banner-game-logo {
+    width: 100%;
+  }
 }
 
 /* Animaciones */
@@ -572,7 +623,7 @@ header li {
   }
 
   50% {
-    transform: translate3d(10px, 0, 0);
+    transform: translate3d(20px, 0, 0);
   }
 
   to {
