@@ -768,32 +768,52 @@ header li {
 /* O N L I N E  S T O R E */
 
 .onlineStore {
-  height: 378px;
+  height: auto;
   width: 100%;
+  margin-left: 30px;
   padding: 48px 0px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 .onlineStore-margin {
-  margin: 0 246px;
+  margin: 0;
 }
 
 .onlineStore-layout {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+
+.onlineStore h1 {
+  margin-top: 0;
+  margin-right: auto;
 }
 
 .onlineStore-banner {
   border-radius: 15px;
+  height: 160px;
+  width: 100%;
 }
+.onlineStore-banner-mobile{
+  display: none;
+}
+
 
 .onlineStore-container {
   display: flex;
-  width: 800px;
+  flex-wrap: wrap;
+  width: 70vw;
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 .onlineStore-text {
-  width: 650px;
+  font-size: large;
+  width: 800px;
   font-weight: 600;
 }
 
@@ -804,15 +824,12 @@ header li {
   padding-left: 20px;
 }
 
-/* .onlineStore-btn-container:hover .onlineStore-btn {
-  background-color: rgb(114, 21, 21); */
-/* } */
 
 .onlineStore-btn {
   display: inline-flex;
-  height: 38px;
-  width: 130px;
-  font-size: 0.85rem;
+  height: 50px;
+  width: 150px;
+  font-size: 1rem;
   font-weight: 600;
   background-color: rgb(230, 0, 18);
   border-radius: 10px;
@@ -820,23 +837,9 @@ header li {
   align-items: center;
 }
 
-.onlineStore-btn-container:hover .onlineStore-btn {
+ .button-animation:hover {
   animation: bounce-in 0.7s;
   background-color: rgb(172, 0, 13);
-}
-@keyframes bounce-in {
-  30% {
-    transform: scale(1.03);
-  }
-  50% {
-    transform: scale(0.97);
-  }
-  70% {
-    transform: scale(1.03);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .no-links {
@@ -1226,11 +1229,11 @@ header li {
   cursor: pointer;
 }
 
-.bs-red-button:hover {
+/* .bs-red-button:hover {
   background-color: rgb(172, 0, 13);
   height: calc(311px - 2px);
   width: calc(145px - 2px);
-}
+} */
 
 /* D I G I T A L  N E W  R E L E A S E S */
 
@@ -1583,3 +1586,72 @@ footer li {
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
 }
+
+@keyframes bounce-in {
+  30% {
+    transform: scale(1.03);
+  }
+  50% {
+    transform: scale(0.97);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }}
+
+
+  @media(max-width:768px){
+    .onlineStore{
+      height: auto;
+      margin-left: 0;
+      padding: 24px 0px;
+    }
+
+    .onlineStore h1{
+     margin-right: auto;
+    } 
+    
+  .onlineStore-layout{
+    width: 90vw;
+  }
+
+  .onlineStore-banner{
+    display:none;
+  }
+
+  .onlineStore-banner-mobile{
+    display: block;
+    width: 90vw;
+    border-radius: 15px;
+  }
+  .onlineStore-container{
+    margin-top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .onlineStore-text{
+    width: 90vw;
+  }
+  .onlineStore-btn-container{
+    padding-left: 0;
+  }
+  .onlineStore-btn {
+    display: inline-flex;
+    height: 50px;
+    width: 90vw;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(230, 0, 18);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
+  @media(max-width:429px){
+
+  }
