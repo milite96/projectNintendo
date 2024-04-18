@@ -1807,8 +1807,8 @@ footer li {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 429px) {
   .protagonists{
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
   }
 }
