@@ -933,14 +933,67 @@ header li {
 
 /* N E W S */
 
+.News-margin{
+  margin: 40px 18.5vw;
+  font-family: "Museo Sans Rounded", sans-serif;
+}
+#news-title-margin{
+  margin-bottom: 44.6px;
+}
+.News-margin a{
+  text-decoration: none;
+  color: #484848;
+  font-weight: 600;
+}
+.News-content h2{
+  font-size: 29px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
 .News-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 35px;
+}
+
+.News-cards div:hover .hovered-img{
+  filter: brightness(50%)
+}
+
+.News-cards img{
+  border-radius: 10px;
 }
 
 .first-card-container {
   width: 550px;
   height: 550px;
+}
+
+.News-cards div:hover .news-title{
+  color: red;
+  cursor: pointer;
+}
+
+.news-title{
+  font-size: 16px;
+}
+
+.first-card-date p, .second-card-date p, .third-card-date p, .fourth-card-date p, .fifth-card-date p, .six-card-date p{
+  font-weight: 300;
+  font-size: 16px;
+}
+.first-card-img img, .second-card-img img{
+  width: 550px;
+  height: 310px;
+}
+
+.first-card-text2, .second-card-text2, .third-card-text2, .fourth-card-text2{
+  font-weight: 100;
+}
+
+.first-card-text3 a, .second-card-text3 a, .third-card-text2 a, .fourth-card-text2 a, .fifth-card-text2 a, .six-card-text2 a{
+  color: #e60012;
+  text-decoration: solid underline 2px;
 }
 
 .second-card-container {
