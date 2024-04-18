@@ -1480,13 +1480,17 @@ header li {
   padding: 2.25rem 1rem;
   color: rgb(255, 255, 255);
   display: grid;
-  justify-items: end;
-  grid-template-columns: auto repeat(1, 1fr);
-  align-items: center;
+  place-items: center end;
 }
-.footer-nintendo-jpg {
-  justify-self: start;
+.footer-bannergrid {
+    color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    width: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
+
 .footer-social-logos {
   display: grid;
   grid-template-columns:auto repeat(4,58px);
@@ -1498,7 +1502,11 @@ header li {
   
   
 }
+.footer-nintendo.jpg {
+  place-items: start;
+}
 .footer-grid {
+  
   max-width: 90rem;
   width: 100%;
   margin-left: auto;
@@ -1512,14 +1520,34 @@ header li {
   display: block;
 }
 .footer-linkgrid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  margin: 1rem auto;
-  row-gap: 2rem;
-  justify-content: center;
-  column-gap: 1rem;
- 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 1rem auto;
+    row-gap: 2rem;
+    justify-content: center;
 }
+@media (min-width:1440px) {
+  .footer-linkgrid {
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: -1rem;
+  }
+}
+@media (max-width: 1025px) {
+  .footer-linkgrid {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media (max-width: 768px) {
+  .footer-linkgrid {
+    grid-template-columns: repeat(3,1fr)
+  }
+}
+@media (max-width: 429px) {
+  .footer-linkgrid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 .footer-about {
   border-left: 1px solid rgb(218, 218, 218);
   grid-row: span 2;
@@ -1564,17 +1592,17 @@ footer li {
 .footer-parents {
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
-  grid-row: span 2;
+  
 }
 .footer-privacybox {
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
-  grid-row: span 2;
+  
 }
 .footer-community {
   border-left: 1px solid rgb(218, 218, 218);
   padding-left: 1.5rem;
-  grid-row: span 2;
+  
 }
 
 
@@ -1602,9 +1630,14 @@ footer li {
 }
 .footer-legalinfo  {
   background-color: rgb(36, 36, 36);
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 114px;
   color: rgb(255, 255, 255);
   text-align: center;
+}
+@media (min-width: 1025px) {
+  .footer-legalinfo {
+    padding: 2rem 1rem;
+  }
 }
 
 .footer-legal-links {
