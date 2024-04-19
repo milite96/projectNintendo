@@ -11,6 +11,20 @@ body {
   overflow-x: hidden;
 }
 
+hr{
+  border-color:#c7c7c7;
+  border-top: 0;
+}
+
+.different-hr{
+width: 75vw;
+padding-top: 35px;
+border-left: 0;
+border-right: 0;
+
+}
+
+
 /* N A V B A R */
 
 header {
@@ -643,6 +657,7 @@ header li {
 }
 
 .featured h1 {
+  margin-top: 0;
   font-size: 1.75rem;
 }
 
@@ -1041,6 +1056,27 @@ header li {
 .six-card-container {
   width: 262px;
   height: 321px;
+}
+
+#news-see-cont{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+#news-see-button{
+  color: white;
+  display: inline-flex;
+  height: 50px;
+  width: 250px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(230, 0, 18);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 /* C H A R A C T E R S */
@@ -2202,7 +2238,10 @@ footer li {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
+  header {
+    height: 40px;
+  }
   .nav-fullscreen {
     visibility: hidden;
   }
@@ -2211,7 +2250,7 @@ footer li {
     visibility: visible;
     background-color: #e60012;
     position: absolute;
-    top: 1px;
+    top: 0px;
     width: 100%;
     height: 50px;
     display: flex;
@@ -2354,11 +2393,11 @@ footer li {
     width: 90vw;
   }
 
-  .gamingsys-btn-container {
+  .gamingsys-btn-container, #news-see-cont {
     padding-left: 0;
   }
 
-  .gamingsys-btn {
+  .gamingsys-btn, #news-see-button {
     display: inline-flex;
     height: 50px;
     width: 90vw;
@@ -2368,6 +2407,11 @@ footer li {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+  }
+
+  .News-margin{
+    margin: 40px 2vw;
+    margin-left: 30px;
   }
 
   .protagonists {
@@ -2380,6 +2424,10 @@ footer li {
 }
 
 @media (max-width: 429px) {
+  header {
+    height: 40px;
+  }
+
   .nav-fullscreen {
     display: none;
   }
@@ -2388,7 +2436,7 @@ footer li {
     visibility: visible;
     background-color: #e60012;
     position: absolute;
-    top: 1px;
+    top: 0px;
     width: 100%;
     height: 50px;
     display: flex;
@@ -2471,6 +2519,11 @@ footer li {
   .bs-h3-container h3:hover,
   .nr-h3-container h3:hover {
     color: black;
+  }
+
+  .News-margin{
+    margin: 40px 2vw;
+    margin-left: 20px;
   }
 
   .protagonists {
