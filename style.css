@@ -11,16 +11,16 @@ body {
   overflow-x: hidden;
 }
 
-hr{
-  border-color:#c7c7c7;
+hr {
+  border-color: #c7c7c7;
   border-top: 0;
 }
 
-.different-hr{
-width: 75vw;
-padding-top: 35px;
-border-left: 0;
-border-right: 0;
+.different-hr {
+  width: 75vw;
+  padding-top: 35px;
+  border-left: 0;
+  border-right: 0;
 
 }
 
@@ -976,6 +976,8 @@ header li {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
+  height: auto;
+  margin-bottom: 40px;
 }
 
 .News-cards div:hover .hovered-img {
@@ -986,9 +988,10 @@ header li {
   border-radius: 10px;
 }
 
-.first-card-container {
-  width: 550px;
-  height: 550px;
+.first-card-container,
+.second-card-container {
+  width: 25vw;
+  height: auto;
 }
 
 .News-cards div:hover .news-title {
@@ -1012,8 +1015,8 @@ header li {
 
 .first-card-img img,
 .second-card-img img {
-  width: 550px;
-  height: 310px;
+  width: 100%;
+  height: auto;
 }
 
 .first-card-text2,
@@ -1033,39 +1036,30 @@ header li {
   text-decoration: solid underline 2px;
 }
 
-.second-card-container {
-  width: 550px;
-  height: 550px;
-}
-
-.third-card-container {
-  width: 262px;
-  height: 321px;
-}
-
-.fourth-card-container {
-  width: 262px;
-  height: 321px;
-}
-
-.fifth-card-container {
-  width: 262px;
-  height: 321px;
-}
-
+.third-card-container,
+.fourth-card-container,
+.fifth-card-container,
 .six-card-container {
-  width: 262px;
-  height: 321px;
+  width: 12.5vw;
+  height: auto;
 }
 
-#news-see-cont{
+.third-card-img img,
+.fourth-card-img img,
+.fifth-card-img img,
+.six-card-img img {
+  width: 100%;
+}
+
+
+#news-see-cont {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
-#news-see-button{
+#news-see-button {
   color: white;
   display: inline-flex;
   height: 50px;
@@ -1094,6 +1088,7 @@ header li {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 50px;
+  gap: 1.5vw;
 }
 
 .mario-image {
@@ -2238,10 +2233,11 @@ footer li {
   }
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
   header {
     height: 40px;
   }
+
   .nav-fullscreen {
     visibility: hidden;
   }
@@ -2393,11 +2389,13 @@ footer li {
     width: 90vw;
   }
 
-  .gamingsys-btn-container, #news-see-cont {
+  .gamingsys-btn-container,
+  #news-see-cont {
     padding-left: 0;
   }
 
-  .gamingsys-btn, #news-see-button {
+  .gamingsys-btn,
+  #news-see-button {
     display: inline-flex;
     height: 50px;
     width: 90vw;
@@ -2409,9 +2407,14 @@ footer li {
     align-items: center;
   }
 
-  .News-margin{
+  .News-margin {
     margin: 40px 2vw;
     margin-left: 30px;
+  }
+
+  .characters {
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
 
   .protagonists {
@@ -2521,9 +2524,14 @@ footer li {
     color: black;
   }
 
-  .News-margin{
+  .News-margin {
     margin: 40px 2vw;
     margin-left: 20px;
+  }
+
+  .characters {
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
 
   .protagonists {
@@ -2554,6 +2562,7 @@ footer li {
     justify-items: end;
     grid-template-columns: auto repeat(4, 1fr);
   }
+
   .footer-nintendo-jpg {
     justify-self: start;
     grid-column: span 1;
