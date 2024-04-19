@@ -273,53 +273,67 @@
     </header>
 
     <!-- B A N N E R -->
-
     <section class="banner">
       <div class="slider">
+
+        <!-- First banner -->
         <div class="banner-slider">
           <div class="image-banner-slider-container">
-            <img
-              class="image-banner-spotlight-overlay"
-              src="assets/images/first-banner/spotlight-overlay.avif"
-              alt=""
-            />
-            <img
-              class="image-banner-game-logo"
-              src="assets/images/first-banner/game-logo.avif"
-              alt=""
-            />
-            <img
-              class="image-banner-blue-checkered-bg"
-              src="assets/images/first-banner/blue-checkered-background.avif"
-              alt=""
-            />
+            <div class="image-banner-spotlight-overlay-container">
+              <img
+                class="image-banner-spotlight-overlay"
+                src="assets/banner/desktop/first-banner/spotlight-overlay.avif"
+                alt="Spotlight overlay"
+              />
+            </div>
+            <div class="image-banner-game-logo-container">
+              <img
+                class="image-banner-game-logo"
+                src="assets/banner/desktop/first-banner/game-logo.avif"
+                alt="Game logo"
+              />
+            </div>
+            <div class="image-banner-blue-checkered-bg-container">
+              <img
+                class="image-banner-blue-checkered-bg"
+                src="assets/banner/desktop/first-banner/blue-checkered-background.avif"
+                alt="Blue checkered background"
+              />
+            </div>
             <img
               id="slide-1"
-              class="image-banner-slider"
-              src="assets/images/first-banner/main-asset.avif"
+              class="image-banner-slider first-image-banner"
+              src="assets/banner/desktop/first-banner/main-asset.avif"
               alt="First Peach Banner"
             />
+
+            <img 
+            class="image-banner-slider-v2"
+            src="assets/banner/mobile/first-banner/main-asset-v2.avif" 
+            alt="First Banner Peach"
+            /> 
+            
             <div class="curtain-center-container">
               <img
                 class="curtain-center"
-                src="assets/images/first-banner/curtain-center"
+                src="assets/banner/desktop/first-banner/curtain-center.avif"
                 alt="Curtain Center Princess Peach"
               />
             </div>
             <div class="curtain-right-left-container">
               <img
                 class="curtain-left"
-                src="assets/images/first-banner/curtain-left"
+                src="assets/banner/desktop/first-banner/curtain-left.avif"
                 alt="Curtain Left Princess Peach"
               />
               <img
                 class="curtain-right"
-                src="assets/images/first-banner/curtain-right"
+                src="assets/banner/desktop/first-banner/curtain-right.avif"
                 alt="Curtain Right Princess Peach"
               />
             </div>
           </div>
-
+    
           <div class="banner-info">
             <p class="title-banner">
               Download the free demo and step into the spotlight with Princess
@@ -328,27 +342,31 @@
             <div class="esrb">
               <img
                 class="esrb-10"
-                src="assets/images/first-banner/esrb10.svg"
+                src="assets/banner/desktop/first-banner/esrb10.avif"
                 alt="ESRB +10"
               />
               <p class="esrb-description">Fantasy Violence</p>
             </div>
           </div>
         </div>
-
+        
+        <!-- Second banner -->
         <div class="banner-slider">
           <div class="image-banner-slider-container">
             <img
               id="slide-2"
               class="image-banner-slider second-image-banner"
-              src="assets/images/second-banner/CS-Peach-Collection-Desktop-main-asset.avif"
+              src="assets/banner/desktop/second-banner/CS-Peach-Collection-Desktop-main-asset.avif"
               alt="Peach Collection Desktop"
             />
-            <img
-              class="image-banner-slider-peach-collection-overlay"
-              src="assets/images/second-banner/CS-Peach-Collection-Desktop-overlay.avif"
-              alt=""
-            />
+            
+            <div class="second-image-banner-overlay-container">
+              <img
+                class="second-image-banner-overlay"
+                src="assets/banner/desktop/second-banner/CS-Peach-Collection-Desktop-overlay.avif"
+                alt="Peach Collection Desktop Overlay"
+              />
+            </div>
           </div>
           <div class="banner-info">
             <p class="title-banner">
@@ -383,13 +401,15 @@
           </div>
         </div>
       </div>
+
+      <!-- Navigation banner -->
       <div class="banner-nav">
         <button class="banner-nav-button" type="button">
           <a href="#slide-1">
             <img
               class="banner-nav-button-img"
-              src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Princess%20Peach%20Showtime%20-%20Animated/peach-thumbnail-blue"
-              alt=""
+              src="assets/banner/nav/peach-thumbnail-blue.avif"
+              alt="Peach Thumbnail Blue"
             />
           </a>
         </button>
@@ -397,8 +417,8 @@
           <a href="#slide-2">
             <img
               class="banner-nav-button-img"
-              src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Peach%20Collection/96x96-CS-Thumb-Peach-Collection"
-              alt=""
+              src="assets/banner/nav/CS-Thumb-Peach-Collection.avif"
+              alt="CS Thumb Peach Collection"
             />
           </a>
         </button>
@@ -406,14 +426,14 @@
           <a href="#slide-3">
             <img
               class="banner-nav-button-img"
-              src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,h_56,w_56/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/03-March/Leading%20Ladies/96x96-CS-Thumb-Leading-Ladies"
-              alt=""
+              src="assets/banner/nav/CS-Thumb-Leading-Ladies.avif"
+              alt="CS Thumb Leading Ladies"
             />
           </a>
         </button>
       </div>
     </section>
-
+    
     <!-- F E A T U R E D -->
 
     <section class="featured">
@@ -902,6 +922,17 @@
             </div>
           </a>
           <h3>The Legend of Zelda™</h3>
+        </div>
+        <div class="splatoon">
+          <a class="characters-link" href="#">
+            <div class="splatoon-image">
+              <img
+                src="assets/characters/Splatoon.avif"
+                width="200"
+                height="200"
+              />
+            </div>
+          </a>
         </div>
         <div class="splatoon">
           <a class="characters-link" href="#">
