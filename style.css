@@ -837,7 +837,7 @@ header li {
 
 .onlineStore-banner {
   border-radius: 15px;
-  height: 160px;
+  height: auto;
   width: 100%;
 }
 
