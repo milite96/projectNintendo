@@ -1,3 +1,3 @@
-En este proyecto vamos a copiar la pagina web de www.nintendo.com/us/
+Entrega del proyecto Nintendo:
 
-Para ver las tareas asignadas y las actualizaciones sobre el proyecto -> https://trello.com/b/TljUTEhs/
+Hemos recreado la página oficial de Nintendo (US).
