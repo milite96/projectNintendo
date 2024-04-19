@@ -435,7 +435,7 @@
     </section>
     
     <!-- F E A T U R E D -->
-
+    <hr />
     <section class="featured">
       <h1>Featured</h1>
       <!--tenemos que seguir por aqui -->
@@ -708,27 +708,52 @@
     <hr />
 
     <section class="onlineStore">
-      <div class="onlineStore-margin">
         <div class="onlineStore-layout">
-          <h1>Online Store</h1>
+          <h1>Online store</h1>
           <img
             class="onlineStore-banner"
-            src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_0.800000011920929/c_scale,w_1200/ncom/en_US/merchandising/MNS_desktop_TEST"
-            alt="nintendo store banner"
+            src="assets\onlineStore\MNS_desktop_TEST.png"
+            alt="nintendo store banner desktop"
+          />
+          <img
+            class="onlineStore-banner-mobile"
+            src="assets\onlineStore\MNS_mobile_TEST.png"
+            alt="nintendo store banner mobile"
           />
           <div class="onlineStore-container">
             <p class="onlineStore-text">
               Shop games, exclusive Nintendo merchandise, and more! Plus, get
               free shipping on orders $50 and over.
             </p>
-            <div class="onlineStore-btn-container">
-              <a href="#" class="onlineStore-btn no-links"> Start shopping </a>
+             <div class="onlineStore-btn-container">
+              <a href="#" class="button-animation onlineStore-btn no-links"> Start shopping </a>
             </div>
-          </div>
         </div>
       </div>
     </section>
     <hr />
+
+    <!--G A M I N G  S Y S T E M S-->
+
+    <section class="gaming-systems">
+      <div class="gamingsys-layout">
+        <h1>Gaming systems</h1>
+        <img
+          class="gamingsys-banner"
+          src="assets\gamingSystems\Nintendo_Switch_family_wide_TEST-1.avif"
+          alt="nintendo store banner desktop"
+        />
+        <div class="gamingsys-container">
+          <p class="gamingsys-text">
+            Find the perfect Nintengo Switch system for you.
+          </p>
+           <div class="gamingsys-btn-container">
+            <a href="#" class="no-links gamingsys-btn button-animation  "> Explore now </a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <hr />
 
     <!-- N E W S -->
 
@@ -1010,8 +1035,8 @@
     </section>
 
     <!-- D I G I T A L   B E S T   S E L L E R S -->
-
-    <section class="digital">
+   <hr />
+    <section class="digital-best-sellers">
       <div class="digital-margin">
         <section class="best-sellers">
           <!-- a partir de ahora best-sellers se abreviara como bs-->
@@ -1042,54 +1067,61 @@
                         <div class="bs-red-stick"></div>
                         <span class="bs-console">Nintendo Switch</span>
                       </div>
-                      <button class="bs-heart-button">
-                        <abbr title="Add to Wish list">
-                          <svg
-                            viewBox="0 0 54 54"
-                            fill="currentColor"
-                            stroke="currentColor"
-                            width="24"
-                            role="presentation"
-                            alt=""
-                            data-testid="heartspark"
-                            color="currentColor"
-                            size="24"
-                          >
-                            <g class="bs-hearts">
-                              <path
-                                class="bs-heart-outline"
-                                d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
-                              ></path>
-                              <path
-                                class="bs-heart-filled"
-                                d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
-                              ></path>
-                            </g>
-                            <g class="bs-sparks">
-                              <path
-                                class="bs-spark"
-                                d="M27 8V0M27 46v8"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
-                                stroke-width="1.99998"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M46 27h8M8 27H0"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
-                                stroke-width="1.99998"
-                              ></path>
-                            </g>
-                          </svg>
-                        </abbr>
-                      </button>
+                      <label
+                        class="bs-heart-button"
+                        for="bs-heart-checkbox-1"
+                        title="Add to Wish list"
+                      >
+                        <input
+                          type="checkbox"
+                          id="bs-heart-checkbox-1"
+                          hidden
+                        />
+                        <svg
+                          viewBox="0 0 54 54"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          width="24"
+                          role="presentation"
+                          alt=""
+                          data-testid="heartspark"
+                          color="currentColor"
+                          size="24"
+                        >
+                          <g class="bs-hearts">
+                            <path
+                              class="bs-heart-outline"
+                              d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                            ></path>
+                            <path
+                              class="bs-heart-filled"
+                              d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
+                            ></path>
+                          </g>
+                          <g class="bs-sparks">
+                            <path
+                              class="bs-spark"
+                              d="M27 8V0M27 46v8"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                              stroke-width="1.99998"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M46 27h8M8 27H0"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                              stroke-width="1.99998"
+                            ></path>
+                          </g>
+                        </svg>
+                      </label>
                     </div>
                     <!--  es el pie de carta, puede ser la consola o "news and events"  -->
                   </div>
@@ -1118,54 +1150,61 @@
                         <div class="bs-red-stick"></div>
                         <span class="bs-console">Nintendo Switch</span>
                       </div>
-                      <button class="bs-heart-button">
-                        <abbr title="Add to Wish list">
-                          <svg
-                            viewBox="0 0 54 54"
-                            fill="currentColor"
-                            stroke="currentColor"
-                            width="24"
-                            role="presentation"
-                            alt=""
-                            data-testid="heartspark"
-                            color="currentColor"
-                            size="24"
-                          >
-                            <g class="bs-hearts">
-                              <path
-                                class="bs-heart-outline"
-                                d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
-                              ></path>
-                              <path
-                                class="bs-heart-filled"
-                                d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
-                              ></path>
-                            </g>
-                            <g class="bs-sparks">
-                              <path
-                                class="bs-spark"
-                                d="M27 8V0M27 46v8"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
-                                stroke-width="1.99998"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M46 27h8M8 27H0"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
-                                stroke-width="1.99998"
-                              ></path>
-                            </g>
-                          </svg>
-                        </abbr>
-                      </button>
+                      <label
+                        class="bs-heart-button"
+                        for="bs-heart-checkbox-2"
+                        title="Add to Wish list"
+                      >
+                        <input
+                          type="checkbox"
+                          id="bs-heart-checkbox-2"
+                          hidden
+                        />
+                        <svg
+                          viewBox="0 0 54 54"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          width="24"
+                          role="presentation"
+                          alt=""
+                          data-testid="heartspark"
+                          color="currentColor"
+                          size="24"
+                        >
+                          <g class="bs-hearts">
+                            <path
+                              class="bs-heart-outline"
+                              d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                            ></path>
+                            <path
+                              class="bs-heart-filled"
+                              d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
+                            ></path>
+                          </g>
+                          <g class="bs-sparks">
+                            <path
+                              class="bs-spark"
+                              d="M27 8V0M27 46v8"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                              stroke-width="1.99998"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M46 27h8M8 27H0"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                              stroke-width="1.99998"
+                            ></path>
+                          </g>
+                        </svg>
+                      </label>
                     </div>
                     <!--  es el pie de carta, puede ser la consola o "news and events"  -->
                   </div>
@@ -1194,54 +1233,61 @@
                         <div class="bs-red-stick"></div>
                         <span class="bs-console">Nintendo Switch</span>
                       </div>
-                      <button class="bs-heart-button">
-                        <abbr title="Add to Wish list">
-                          <svg
-                            viewBox="0 0 54 54"
-                            fill="currentColor"
-                            stroke="currentColor"
-                            width="24"
-                            role="presentation"
-                            alt=""
-                            data-testid="heartspark"
-                            color="currentColor"
-                            size="24"
-                          >
-                            <g class="bs-hearts">
-                              <path
-                                class="bs-heart-outline"
-                                d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
-                              ></path>
-                              <path
-                                class="bs-heart-filled"
-                                d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
-                              ></path>
-                            </g>
-                            <g class="bs-sparks">
-                              <path
-                                class="bs-spark"
-                                d="M27 8V0M27 46v8"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
-                                stroke-width="1.99998"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M46 27h8M8 27H0"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
-                                stroke-width="1.99998"
-                              ></path>
-                            </g>
-                          </svg>
-                        </abbr>
-                      </button>
+                      <label
+                        class="bs-heart-button"
+                        for="bs-heart-checkbox-3"
+                        title="Add to Wish list"
+                      >
+                        <input
+                          type="checkbox"
+                          id="bs-heart-checkbox-3"
+                          hidden
+                        />
+                        <svg
+                          viewBox="0 0 54 54"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          width="24"
+                          role="presentation"
+                          alt=""
+                          data-testid="heartspark"
+                          color="currentColor"
+                          size="24"
+                        >
+                          <g class="bs-hearts">
+                            <path
+                              class="bs-heart-outline"
+                              d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                            ></path>
+                            <path
+                              class="bs-heart-filled"
+                              d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
+                            ></path>
+                          </g>
+                          <g class="bs-sparks">
+                            <path
+                              class="bs-spark"
+                              d="M27 8V0M27 46v8"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                              stroke-width="1.99998"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M46 27h8M8 27H0"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                              stroke-width="1.99998"
+                            ></path>
+                          </g>
+                        </svg>
+                      </label>
                     </div>
                     <!--  es el pie de carta, puede ser la consola o "news and events"  -->
                   </div>
@@ -1270,54 +1316,61 @@
                         <div class="bs-red-stick"></div>
                         <span class="bs-console">Nintendo Switch</span>
                       </div>
-                      <button class="bs-heart-button">
-                        <abbr title="Add to Wish list">
-                          <svg
-                            viewBox="0 0 54 54"
-                            fill="currentColor"
-                            stroke="currentColor"
-                            width="24"
-                            role="presentation"
-                            alt=""
-                            data-testid="heartspark"
-                            color="currentColor"
-                            size="24"
-                          >
-                            <g class="bs-hearts">
-                              <path
-                                class="bs-heart-outline"
-                                d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
-                              ></path>
-                              <path
-                                class="bs-heart-filled"
-                                d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
-                              ></path>
-                            </g>
-                            <g class="bs-sparks">
-                              <path
-                                class="bs-spark"
-                                d="M27 8V0M27 46v8"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
-                                stroke-width="1.99998"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M46 27h8M8 27H0"
-                                stroke-width="2"
-                              ></path>
-                              <path
-                                class="bs-spark"
-                                d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
-                                stroke-width="1.99998"
-                              ></path>
-                            </g>
-                          </svg>
-                        </abbr>
-                      </button>
+                      <label
+                        class="bs-heart-button"
+                        for="bs-heart-checkbox-4"
+                        title="Add to Wish list"
+                      >
+                        <input
+                          type="checkbox"
+                          id="bs-heart-checkbox-4"
+                          hidden
+                        />
+                        <svg
+                          viewBox="0 0 54 54"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          width="24"
+                          role="presentation"
+                          alt=""
+                          data-testid="heartspark"
+                          color="currentColor"
+                          size="24"
+                        >
+                          <g class="bs-hearts">
+                            <path
+                              class="bs-heart-outline"
+                              d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                            ></path>
+                            <path
+                              class="bs-heart-filled"
+                              d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
+                            ></path>
+                          </g>
+                          <g class="bs-sparks">
+                            <path
+                              class="bs-spark"
+                              d="M27 8V0M27 46v8"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                              stroke-width="1.99998"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M46 27h8M8 27H0"
+                              stroke-width="2"
+                            ></path>
+                            <path
+                              class="bs-spark"
+                              d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                              stroke-width="1.99998"
+                            ></path>
+                          </g>
+                        </svg>
+                      </label>
                     </div>
                     <!--  es el pie de carta, puede ser la consola o "news and events"  -->
                   </div>
@@ -1326,28 +1379,36 @@
             </a>
 
             <a class="bs-noLinks" href="#">
-              <div class="bs-red-button">
+              <div class="button-animation bs-red-button">
                 <span class="bs-see-full-list">See full list</span>
               </div>
             </a>
           </div>
         </section>
+      </div>
+    </section>
 
-        <!-- D I G I T A L   N E W   R E L E A S E S -->
+    <!-- D I G I T A L   N E W   R E L E A S E S -->
 
+    <section class="digital-new-releases">
+      <div class="digital-margin">
         <section class="new-releases">
           <!--a partir de ahora new releases se abreviara como nr -->
-          <h1>Digital new releases</h1>
+          <div class="nr-container">
+            <h1>Digital new releases</h1>
+            <a href="#"> See full list</a>
+          </div>
+          <span class="square-16x16"></span>
           <div class="nr-layout">
             <a class="nr-noLinks" href="#">
-              <div class="nr-card">
+              <div class="nr-card-tags">
                 <div class="nr-image-container">
                   <img
                     src="assets/Digital-new-releases/Loretta.avif"
                     alt="Icons Loretta"
                   />
                 </div>
-                <div class="nr-content-1">
+                <div class="nr-content-1-tag">
                   <div class="nr-content-2">
                     <div class="nr-h3-container">
                       <h3>Loretta</h3>
@@ -1366,8 +1427,9 @@
                         <div class="nr-red-stick"></div>
                         <span class="nr-console">Nintendo Switch</span>
                       </div>
-                      <button class="nr-heart-button">
-                        <abbr title="Add to Wish list">
+                      <abbr title="Add to Wish list">
+                        <label class="nr-heart-button" for="nr-heart-checkbox-1">
+                          <input type="checkbox" id="nr-heart-checkbox-1" hidden />
                           <svg
                             viewBox="0 0 54 54"
                             fill="currentColor"
@@ -1412,12 +1474,257 @@
                               ></path>
                             </g>
                           </svg>
-                        </abbr>
-                      </button>
+                        </label>
+                      </abbr>
                     </div>
                     <!--  es el pie de carta, puede ser la consola o "news and events"  -->
                   </div>
                 </div>
+              </div>
+            </a>
+
+            <a class="nr-noLinks" href="#">
+              <div class="nr-card-tags">
+                <div class="nr-image-container">
+                  <img
+                    src="assets/Digital-new-releases/peach-showtime.avif"
+                    alt="Icons Peach Showtime"
+                  />
+                </div>
+                <div class="nr-content-1-tag">
+                  <div class="nr-content-2">
+                    <div class="nr-h3-container">
+                      <h3>Princess Peach<sup class="TM">TM</sup>: Showtime!</h3>
+                      <div class="nr-date">3/22/24</div>
+                    </div>
+                    <span class="nr-tag-blue">Free demo</span>
+                    <div class="nr-price-container">
+                      <span class="nr-price">$59.99 </span>
+                    </div>
+                    <span class="nr-spacing"></span>
+                    <div class="nr-footer-grid-container">
+                      <div class="nr-footer-flex-container">
+                        <div class="nr-red-stick"></div>
+                        <span class="nr-console">Nintendo Switch</span>
+                      </div>
+                      <abbr title="Add to Wish list">
+                        <label class="nr-heart-button" for="nr-heart-checkbox-2">
+                          <input type="checkbox" id="nr-heart-checkbox-2" hidden />
+                          <svg
+                            viewBox="0 0 54 54"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            width="24"
+                            role="presentation"
+                            alt=""
+                            data-testid="heartspark"
+                            color="currentColor"
+                            size="24"
+                          >
+                            <g class="nr-hearts">
+                              <path
+                                class="nr-heart-outline"
+                                d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                              ></path>
+                              <path
+                                class="nr-heart-filled"
+                                d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
+                              ></path>
+                            </g>
+                            <g class="nr-sparks">
+                              <path
+                                class="nr-spark"
+                                d="M27 8V0M27 46v8"
+                                stroke-width="2"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                                stroke-width="1.99998"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M46 27h8M8 27H0"
+                                stroke-width="2"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                                stroke-width="1.99998"
+                              ></path>
+                            </g>
+                          </svg>
+                        </label>
+                      </abbr>
+                    </div>
+                    <!--  es el pie de carta, puede ser la consola o "news and events"  -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a class="nr-noLinks" href="#">
+              <div class="nr-card-tags">
+                <div class="nr-image-container">
+                  <img
+                    src="assets/Digital-new-releases/noumbrellas.avif"
+                    alt="Icons No umbrellas Allowed"
+                  />
+                </div>
+                <div class="nr-content-1-tag">
+                  <div class="nr-content-2">
+                    <div class="nr-h3-container">
+                      <h3>No Umbrellas Allowed</h3>
+                      <div class="nr-date">4/5/24</div>
+                    </div>
+                    <span class="nr-tag-red">New!</span>
+                    <div class="nr-price-container">
+                      <span class="nr-price">$19.99 </span>
+                    </div>
+                    <span class="nr-spacing"></span>
+                    <div class="nr-footer-grid-container">
+                      <div class="nr-footer-flex-container">
+                        <div class="nr-red-stick"></div>
+                        <span class="nr-console">Nintendo Switch</span>
+                      </div>
+                      <abbr title="Add to Wish list">
+                        <label class="nr-heart-button" for="nr-heart-checkbox-3">
+                          <input type="checkbox" id="nr-heart-checkbox-3" hidden />
+                          <svg
+                            viewBox="0 0 54 54"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            width="24"
+                            role="presentation"
+                            alt=""
+                            data-testid="heartspark"
+                            color="currentColor"
+                            size="24"
+                          >
+                            <g class="nr-hearts">
+                              <path
+                                class="nr-heart-outline"
+                                d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                              ></path>
+                              <path
+                                class="nr-heart-filled"
+                                d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
+                              ></path>
+                            </g>
+                            <g class="nr-sparks">
+                              <path
+                                class="nr-spark"
+                                d="M27 8V0M27 46v8"
+                                stroke-width="2"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                                stroke-width="1.99998"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M46 27h8M8 27H0"
+                                stroke-width="2"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                                stroke-width="1.99998"
+                              ></path>
+                            </g>
+                          </svg>
+                        </label>
+                      </abbr>
+                    </div>
+                    <!--  es el pie de carta, puede ser la consola o "news and events"  -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a class="nr-noLinks" href="#">
+              <div class="nr-card">
+                <div class="nr-image-container">
+                  <img
+                    src="assets/Digital-new-releases/SMRPG.avif"
+                    alt="Icons Super Mario RPG"
+                  />
+                </div>
+                <div class="nr-content-1">
+                  <div class="nr-content-2">
+                    <div class="nr-h3-container">
+                      <h3>Super Mario RPG<sup class="TM">TM</sup></h3>
+                      <div class="nr-date">11/17/24</div>
+                    </div>
+                    <div class="nr-price-container">
+                      <span class="nr-price">$59.99 </span>
+                    </div>
+                    <span class="nr-spacing"></span>
+                    <div class="nr-footer-grid-container">
+                      <div class="nr-footer-flex-container">
+                        <div class="nr-red-stick"></div>
+                        <span class="nr-console">Nintendo Switch</span>
+                      </div>
+                      <abbr title="Add to Wish list">
+                        <label class="nr-heart-button" for="nr-heart-checkbox-4">
+                          <input type="checkbox" id="nr-heart-checkbox-4" hidden />
+                          <svg
+                            viewBox="0 0 54 54"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            width="24"
+                            role="presentation"
+                            alt=""
+                            data-testid="heartspark"
+                            color="currentColor"
+                            size="24"
+                          >
+                            <g class="nr-hearts">
+                              <path
+                                class="nr-heart-outline"
+                                d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
+                              ></path>
+                              <path
+                                class="nr-heart-filled"
+                                d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
+                              ></path>
+                            </g>
+                            <g class="nr-sparks">
+                              <path
+                                class="nr-spark"
+                                d="M27 8V0M27 46v8"
+                                stroke-width="2"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
+                                stroke-width="1.99998"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M46 27h8M8 27H0"
+                                stroke-width="2"
+                              ></path>
+                              <path
+                                class="nr-spark"
+                                d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
+                                stroke-width="1.99998"
+                              ></path>
+                            </g>
+                          </svg>
+                        </label>
+                      </abbr>
+                    </div>
+                    <!--  es el pie de carta, puede ser la consola o "news and events"  -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a class="nr-noLinks" href="#">
+              <div class="nr-red-button">
+                <span class="nr-see-full-list">See full list</span>
               </div>
             </a>
           </div>
